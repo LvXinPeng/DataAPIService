@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 import java.sql.*;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.UUID;
 
 @Service
 public class DataServiceImpl implements DataService {
@@ -29,7 +30,7 @@ public class DataServiceImpl implements DataService {
 
         int recordCount = 0;
         while (resultSet.next()) {
-            recordCount ++;
+            recordCount++;
             JSONObject jsonObj = new JSONObject();
             for (int col = 1; col <= columnCount; col++) {
                 String columnName = metaData.getColumnLabel(col);
@@ -59,11 +60,9 @@ public class DataServiceImpl implements DataService {
 
 
     private static String getTopicName() {
-//        String tableName = str.toLowerCase().split("from ", 1)[1].split(" ", 1)[0].trim();
         String tableName = "topic-";
-        long curTime = System.currentTimeMillis() / 1000;
-        String topic = tableName.concat(String.valueOf(curTime));
-        System.out.println(topic);
+        String uuid = UUID.randomUUID().toString().toUpperCase().replaceAll(" ", "-");
+        String topic = tableName.concat(uuid);
         return topic;
     }
 
