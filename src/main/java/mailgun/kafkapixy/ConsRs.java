@@ -79,11 +79,11 @@ private static final long serialVersionUID = 0L;
           }
           case 50: {
             if (!((mutable_bitField0_ & 0x00000001) != 0)) {
-              headers_ = new java.util.ArrayList<mailgun.kafkapixy.RecordHeader>();
+              headers_ = new java.util.ArrayList<RecordHeader>();
               mutable_bitField0_ |= 0x00000001;
             }
             headers_.add(
-                input.readMessage(mailgun.kafkapixy.RecordHeader.parser(), extensionRegistry));
+                input.readMessage(RecordHeader.parser(), extensionRegistry));
             break;
           }
           default: {
@@ -110,15 +110,15 @@ private static final long serialVersionUID = 0L;
   }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return mailgun.kafkapixy.KafkaPixyProto.internal_static_ConsRs_descriptor;
+    return KafkaPixyProto.internal_static_ConsRs_descriptor;
   }
 
   @Override
   protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return mailgun.kafkapixy.KafkaPixyProto.internal_static_ConsRs_fieldAccessorTable
+    return KafkaPixyProto.internal_static_ConsRs_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            mailgun.kafkapixy.ConsRs.class, mailgun.kafkapixy.ConsRs.Builder.class);
+            ConsRs.class, Builder.class);
   }
 
   public static final int PARTITION_FIELD_NUMBER = 1;
@@ -198,7 +198,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int HEADERS_FIELD_NUMBER = 6;
-  private java.util.List<mailgun.kafkapixy.RecordHeader> headers_;
+  private java.util.List<RecordHeader> headers_;
   /**
    * <pre>
    * Headers associated with the message
@@ -207,7 +207,7 @@ private static final long serialVersionUID = 0L;
    * <code>repeated .RecordHeader headers = 6;</code>
    */
   @Override
-  public java.util.List<mailgun.kafkapixy.RecordHeader> getHeadersList() {
+  public java.util.List<RecordHeader> getHeadersList() {
     return headers_;
   }
   /**
@@ -218,7 +218,7 @@ private static final long serialVersionUID = 0L;
    * <code>repeated .RecordHeader headers = 6;</code>
    */
   @Override
-  public java.util.List<? extends mailgun.kafkapixy.RecordHeaderOrBuilder>
+  public java.util.List<? extends RecordHeaderOrBuilder>
       getHeadersOrBuilderList() {
     return headers_;
   }
@@ -241,7 +241,7 @@ private static final long serialVersionUID = 0L;
    * <code>repeated .RecordHeader headers = 6;</code>
    */
   @Override
-  public mailgun.kafkapixy.RecordHeader getHeaders(int index) {
+  public RecordHeader getHeaders(int index) {
     return headers_.get(index);
   }
   /**
@@ -252,7 +252,7 @@ private static final long serialVersionUID = 0L;
    * <code>repeated .RecordHeader headers = 6;</code>
    */
   @Override
-  public mailgun.kafkapixy.RecordHeaderOrBuilder getHeadersOrBuilder(
+  public RecordHeaderOrBuilder getHeadersOrBuilder(
       int index) {
     return headers_.get(index);
   }
@@ -332,10 +332,10 @@ private static final long serialVersionUID = 0L;
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof mailgun.kafkapixy.ConsRs)) {
+    if (!(obj instanceof ConsRs)) {
       return super.equals(obj);
     }
-    mailgun.kafkapixy.ConsRs other = (mailgun.kafkapixy.ConsRs) obj;
+    ConsRs other = (ConsRs) obj;
 
     if (getPartition()
         != other.getPartition()) return false;
@@ -381,69 +381,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static mailgun.kafkapixy.ConsRs parseFrom(
+  public static ConsRs parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static mailgun.kafkapixy.ConsRs parseFrom(
+  public static ConsRs parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static mailgun.kafkapixy.ConsRs parseFrom(
+  public static ConsRs parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static mailgun.kafkapixy.ConsRs parseFrom(
+  public static ConsRs parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static mailgun.kafkapixy.ConsRs parseFrom(byte[] data)
+  public static ConsRs parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static mailgun.kafkapixy.ConsRs parseFrom(
+  public static ConsRs parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static mailgun.kafkapixy.ConsRs parseFrom(java.io.InputStream input)
+  public static ConsRs parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static mailgun.kafkapixy.ConsRs parseFrom(
+  public static ConsRs parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static mailgun.kafkapixy.ConsRs parseDelimitedFrom(java.io.InputStream input)
+  public static ConsRs parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static mailgun.kafkapixy.ConsRs parseDelimitedFrom(
+  public static ConsRs parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static mailgun.kafkapixy.ConsRs parseFrom(
+  public static ConsRs parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static mailgun.kafkapixy.ConsRs parseFrom(
+  public static ConsRs parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -456,7 +456,7 @@ private static final long serialVersionUID = 0L;
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(mailgun.kafkapixy.ConsRs prototype) {
+  public static Builder newBuilder(ConsRs prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
   @Override
@@ -477,18 +477,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:ConsRs)
-      mailgun.kafkapixy.ConsRsOrBuilder {
+      ConsRsOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return mailgun.kafkapixy.KafkaPixyProto.internal_static_ConsRs_descriptor;
+      return KafkaPixyProto.internal_static_ConsRs_descriptor;
     }
 
     @Override
     protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return mailgun.kafkapixy.KafkaPixyProto.internal_static_ConsRs_fieldAccessorTable
+      return KafkaPixyProto.internal_static_ConsRs_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              mailgun.kafkapixy.ConsRs.class, mailgun.kafkapixy.ConsRs.Builder.class);
+              ConsRs.class, Builder.class);
     }
 
     // Construct using mailgun.kafkapixy.ConsRs.newBuilder()
@@ -532,17 +532,17 @@ private static final long serialVersionUID = 0L;
     @Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return mailgun.kafkapixy.KafkaPixyProto.internal_static_ConsRs_descriptor;
+      return KafkaPixyProto.internal_static_ConsRs_descriptor;
     }
 
     @Override
-    public mailgun.kafkapixy.ConsRs getDefaultInstanceForType() {
-      return mailgun.kafkapixy.ConsRs.getDefaultInstance();
+    public ConsRs getDefaultInstanceForType() {
+      return ConsRs.getDefaultInstance();
     }
 
     @Override
-    public mailgun.kafkapixy.ConsRs build() {
-      mailgun.kafkapixy.ConsRs result = buildPartial();
+    public ConsRs build() {
+      ConsRs result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
@@ -550,8 +550,8 @@ private static final long serialVersionUID = 0L;
     }
 
     @Override
-    public mailgun.kafkapixy.ConsRs buildPartial() {
-      mailgun.kafkapixy.ConsRs result = new mailgun.kafkapixy.ConsRs(this);
+    public ConsRs buildPartial() {
+      ConsRs result = new ConsRs(this);
       int from_bitField0_ = bitField0_;
       result.partition_ = partition_;
       result.offset_ = offset_;
@@ -605,16 +605,16 @@ private static final long serialVersionUID = 0L;
     }
     @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof mailgun.kafkapixy.ConsRs) {
-        return mergeFrom((mailgun.kafkapixy.ConsRs)other);
+      if (other instanceof ConsRs) {
+        return mergeFrom((ConsRs)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(mailgun.kafkapixy.ConsRs other) {
-      if (other == mailgun.kafkapixy.ConsRs.getDefaultInstance()) return this;
+    public Builder mergeFrom(ConsRs other) {
+      if (other == ConsRs.getDefaultInstance()) return this;
       if (other.getPartition() != 0) {
         setPartition(other.getPartition());
       }
@@ -671,11 +671,11 @@ private static final long serialVersionUID = 0L;
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      mailgun.kafkapixy.ConsRs parsedMessage = null;
+      ConsRs parsedMessage = null;
       try {
         parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        parsedMessage = (mailgun.kafkapixy.ConsRs) e.getUnfinishedMessage();
+        parsedMessage = (ConsRs) e.getUnfinishedMessage();
         throw e.unwrapIOException();
       } finally {
         if (parsedMessage != null) {
@@ -910,17 +910,17 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private java.util.List<mailgun.kafkapixy.RecordHeader> headers_ =
+    private java.util.List<RecordHeader> headers_ =
       java.util.Collections.emptyList();
     private void ensureHeadersIsMutable() {
       if (!((bitField0_ & 0x00000001) != 0)) {
-        headers_ = new java.util.ArrayList<mailgun.kafkapixy.RecordHeader>(headers_);
+        headers_ = new java.util.ArrayList<RecordHeader>(headers_);
         bitField0_ |= 0x00000001;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        mailgun.kafkapixy.RecordHeader, mailgun.kafkapixy.RecordHeader.Builder, mailgun.kafkapixy.RecordHeaderOrBuilder> headersBuilder_;
+        RecordHeader, RecordHeader.Builder, RecordHeaderOrBuilder> headersBuilder_;
 
     /**
      * <pre>
@@ -929,7 +929,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .RecordHeader headers = 6;</code>
      */
-    public java.util.List<mailgun.kafkapixy.RecordHeader> getHeadersList() {
+    public java.util.List<RecordHeader> getHeadersList() {
       if (headersBuilder_ == null) {
         return java.util.Collections.unmodifiableList(headers_);
       } else {
@@ -957,7 +957,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .RecordHeader headers = 6;</code>
      */
-    public mailgun.kafkapixy.RecordHeader getHeaders(int index) {
+    public RecordHeader getHeaders(int index) {
       if (headersBuilder_ == null) {
         return headers_.get(index);
       } else {
@@ -972,7 +972,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .RecordHeader headers = 6;</code>
      */
     public Builder setHeaders(
-        int index, mailgun.kafkapixy.RecordHeader value) {
+        int index, RecordHeader value) {
       if (headersBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -993,7 +993,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .RecordHeader headers = 6;</code>
      */
     public Builder setHeaders(
-        int index, mailgun.kafkapixy.RecordHeader.Builder builderForValue) {
+        int index, RecordHeader.Builder builderForValue) {
       if (headersBuilder_ == null) {
         ensureHeadersIsMutable();
         headers_.set(index, builderForValue.build());
@@ -1010,7 +1010,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .RecordHeader headers = 6;</code>
      */
-    public Builder addHeaders(mailgun.kafkapixy.RecordHeader value) {
+    public Builder addHeaders(RecordHeader value) {
       if (headersBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1031,7 +1031,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .RecordHeader headers = 6;</code>
      */
     public Builder addHeaders(
-        int index, mailgun.kafkapixy.RecordHeader value) {
+        int index, RecordHeader value) {
       if (headersBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1052,7 +1052,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .RecordHeader headers = 6;</code>
      */
     public Builder addHeaders(
-        mailgun.kafkapixy.RecordHeader.Builder builderForValue) {
+        RecordHeader.Builder builderForValue) {
       if (headersBuilder_ == null) {
         ensureHeadersIsMutable();
         headers_.add(builderForValue.build());
@@ -1070,7 +1070,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .RecordHeader headers = 6;</code>
      */
     public Builder addHeaders(
-        int index, mailgun.kafkapixy.RecordHeader.Builder builderForValue) {
+        int index, RecordHeader.Builder builderForValue) {
       if (headersBuilder_ == null) {
         ensureHeadersIsMutable();
         headers_.add(index, builderForValue.build());
@@ -1088,7 +1088,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .RecordHeader headers = 6;</code>
      */
     public Builder addAllHeaders(
-        Iterable<? extends mailgun.kafkapixy.RecordHeader> values) {
+        Iterable<? extends RecordHeader> values) {
       if (headersBuilder_ == null) {
         ensureHeadersIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -1140,7 +1140,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .RecordHeader headers = 6;</code>
      */
-    public mailgun.kafkapixy.RecordHeader.Builder getHeadersBuilder(
+    public RecordHeader.Builder getHeadersBuilder(
         int index) {
       return getHeadersFieldBuilder().getBuilder(index);
     }
@@ -1151,7 +1151,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .RecordHeader headers = 6;</code>
      */
-    public mailgun.kafkapixy.RecordHeaderOrBuilder getHeadersOrBuilder(
+    public RecordHeaderOrBuilder getHeadersOrBuilder(
         int index) {
       if (headersBuilder_ == null) {
         return headers_.get(index);  } else {
@@ -1165,7 +1165,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .RecordHeader headers = 6;</code>
      */
-    public java.util.List<? extends mailgun.kafkapixy.RecordHeaderOrBuilder>
+    public java.util.List<? extends RecordHeaderOrBuilder>
          getHeadersOrBuilderList() {
       if (headersBuilder_ != null) {
         return headersBuilder_.getMessageOrBuilderList();
@@ -1180,9 +1180,9 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .RecordHeader headers = 6;</code>
      */
-    public mailgun.kafkapixy.RecordHeader.Builder addHeadersBuilder() {
+    public RecordHeader.Builder addHeadersBuilder() {
       return getHeadersFieldBuilder().addBuilder(
-          mailgun.kafkapixy.RecordHeader.getDefaultInstance());
+          RecordHeader.getDefaultInstance());
     }
     /**
      * <pre>
@@ -1191,10 +1191,10 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .RecordHeader headers = 6;</code>
      */
-    public mailgun.kafkapixy.RecordHeader.Builder addHeadersBuilder(
+    public RecordHeader.Builder addHeadersBuilder(
         int index) {
       return getHeadersFieldBuilder().addBuilder(
-          index, mailgun.kafkapixy.RecordHeader.getDefaultInstance());
+          index, RecordHeader.getDefaultInstance());
     }
     /**
      * <pre>
@@ -1203,16 +1203,16 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .RecordHeader headers = 6;</code>
      */
-    public java.util.List<mailgun.kafkapixy.RecordHeader.Builder>
+    public java.util.List<RecordHeader.Builder>
          getHeadersBuilderList() {
       return getHeadersFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        mailgun.kafkapixy.RecordHeader, mailgun.kafkapixy.RecordHeader.Builder, mailgun.kafkapixy.RecordHeaderOrBuilder>
+        RecordHeader, RecordHeader.Builder, RecordHeaderOrBuilder>
         getHeadersFieldBuilder() {
       if (headersBuilder_ == null) {
         headersBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            mailgun.kafkapixy.RecordHeader, mailgun.kafkapixy.RecordHeader.Builder, mailgun.kafkapixy.RecordHeaderOrBuilder>(
+            RecordHeader, RecordHeader.Builder, RecordHeaderOrBuilder>(
                 headers_,
                 ((bitField0_ & 0x00000001) != 0),
                 getParentForChildren(),
@@ -1238,12 +1238,12 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:ConsRs)
-  private static final mailgun.kafkapixy.ConsRs DEFAULT_INSTANCE;
+  private static final ConsRs DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new mailgun.kafkapixy.ConsRs();
+    DEFAULT_INSTANCE = new ConsRs();
   }
 
-  public static mailgun.kafkapixy.ConsRs getDefaultInstance() {
+  public static ConsRs getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
@@ -1268,7 +1268,7 @@ private static final long serialVersionUID = 0L;
   }
 
   @Override
-  public mailgun.kafkapixy.ConsRs getDefaultInstanceForType() {
+  public ConsRs getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

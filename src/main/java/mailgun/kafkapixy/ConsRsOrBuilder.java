@@ -65,7 +65,7 @@ public interface ConsRsOrBuilder extends
    *
    * <code>repeated .RecordHeader headers = 6;</code>
    */
-  java.util.List<mailgun.kafkapixy.RecordHeader> 
+  java.util.List<RecordHeader>
       getHeadersList();
   /**
    * <pre>
@@ -74,7 +74,7 @@ public interface ConsRsOrBuilder extends
    *
    * <code>repeated .RecordHeader headers = 6;</code>
    */
-  mailgun.kafkapixy.RecordHeader getHeaders(int index);
+  RecordHeader getHeaders(int index);
   /**
    * <pre>
    * Headers associated with the message
@@ -90,7 +90,7 @@ public interface ConsRsOrBuilder extends
    *
    * <code>repeated .RecordHeader headers = 6;</code>
    */
-  java.util.List<? extends mailgun.kafkapixy.RecordHeaderOrBuilder> 
+  java.util.List<? extends RecordHeaderOrBuilder>
       getHeadersOrBuilderList();
   /**
    * <pre>
@@ -99,6 +99,6 @@ public interface ConsRsOrBuilder extends
    *
    * <code>repeated .RecordHeader headers = 6;</code>
    */
-  mailgun.kafkapixy.RecordHeaderOrBuilder getHeadersOrBuilder(
+  RecordHeaderOrBuilder getHeadersOrBuilder(
           int index);
 }

@@ -24,8 +24,8 @@ public final class KafkaPixyGrpc {
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "Produce",
-      requestType = mailgun.kafkapixy.ProdRq.class,
-      responseType = mailgun.kafkapixy.ProdRs.class,
+      requestType = ProdRq.class,
+      responseType = ProdRs.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
   public static io.grpc.MethodDescriptor<ProdRq,
       ProdRs> getProduceMethod() {
@@ -34,14 +34,14 @@ public final class KafkaPixyGrpc {
       synchronized (KafkaPixyGrpc.class) {
         if ((getProduceMethod = KafkaPixyGrpc.getProduceMethod) == null) {
           KafkaPixyGrpc.getProduceMethod = getProduceMethod =
-              io.grpc.MethodDescriptor.<mailgun.kafkapixy.ProdRq, mailgun.kafkapixy.ProdRs>newBuilder()
+              io.grpc.MethodDescriptor.<ProdRq, ProdRs>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "Produce"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  mailgun.kafkapixy.ProdRq.getDefaultInstance()))
+                  ProdRq.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  mailgun.kafkapixy.ProdRs.getDefaultInstance()))
+                  ProdRs.getDefaultInstance()))
               .setSchemaDescriptor(new KafkaPixyMethodDescriptorSupplier("Produce"))
               .build();
         }
@@ -55,8 +55,8 @@ public final class KafkaPixyGrpc {
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "ConsumeNAck",
-      requestType = mailgun.kafkapixy.ConsNAckRq.class,
-      responseType = mailgun.kafkapixy.ConsRs.class,
+      requestType = ConsNAckRq.class,
+      responseType = ConsRs.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
   public static io.grpc.MethodDescriptor<ConsNAckRq,
       ConsRs> getConsumeNAckMethod() {
@@ -65,14 +65,14 @@ public final class KafkaPixyGrpc {
       synchronized (KafkaPixyGrpc.class) {
         if ((getConsumeNAckMethod = KafkaPixyGrpc.getConsumeNAckMethod) == null) {
           KafkaPixyGrpc.getConsumeNAckMethod = getConsumeNAckMethod =
-              io.grpc.MethodDescriptor.<mailgun.kafkapixy.ConsNAckRq, mailgun.kafkapixy.ConsRs>newBuilder()
+              io.grpc.MethodDescriptor.<ConsNAckRq, ConsRs>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "ConsumeNAck"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  mailgun.kafkapixy.ConsNAckRq.getDefaultInstance()))
+                  ConsNAckRq.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  mailgun.kafkapixy.ConsRs.getDefaultInstance()))
+                  ConsRs.getDefaultInstance()))
               .setSchemaDescriptor(new KafkaPixyMethodDescriptorSupplier("ConsumeNAck"))
               .build();
         }
@@ -86,8 +86,8 @@ public final class KafkaPixyGrpc {
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "Ack",
-      requestType = mailgun.kafkapixy.AckRq.class,
-      responseType = mailgun.kafkapixy.AckRs.class,
+      requestType = AckRq.class,
+      responseType = AckRs.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
   public static io.grpc.MethodDescriptor<AckRq,
       AckRs> getAckMethod() {
@@ -96,14 +96,14 @@ public final class KafkaPixyGrpc {
       synchronized (KafkaPixyGrpc.class) {
         if ((getAckMethod = KafkaPixyGrpc.getAckMethod) == null) {
           KafkaPixyGrpc.getAckMethod = getAckMethod =
-              io.grpc.MethodDescriptor.<mailgun.kafkapixy.AckRq, mailgun.kafkapixy.AckRs>newBuilder()
+              io.grpc.MethodDescriptor.<AckRq, AckRs>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "Ack"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  mailgun.kafkapixy.AckRq.getDefaultInstance()))
+                  AckRq.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  mailgun.kafkapixy.AckRs.getDefaultInstance()))
+                  AckRs.getDefaultInstance()))
               .setSchemaDescriptor(new KafkaPixyMethodDescriptorSupplier("Ack"))
               .build();
         }
@@ -112,29 +112,29 @@ public final class KafkaPixyGrpc {
     return getAckMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<mailgun.kafkapixy.GetOffsetsRq,
+  private static volatile io.grpc.MethodDescriptor<GetOffsetsRq,
       GetOffsetsRs> getGetOffsetsMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "GetOffsets",
-      requestType = mailgun.kafkapixy.GetOffsetsRq.class,
-      responseType = mailgun.kafkapixy.GetOffsetsRs.class,
+      requestType = GetOffsetsRq.class,
+      responseType = GetOffsetsRs.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<mailgun.kafkapixy.GetOffsetsRq,
+  public static io.grpc.MethodDescriptor<GetOffsetsRq,
       GetOffsetsRs> getGetOffsetsMethod() {
-    io.grpc.MethodDescriptor<mailgun.kafkapixy.GetOffsetsRq, GetOffsetsRs> getGetOffsetsMethod;
+    io.grpc.MethodDescriptor<GetOffsetsRq, GetOffsetsRs> getGetOffsetsMethod;
     if ((getGetOffsetsMethod = KafkaPixyGrpc.getGetOffsetsMethod) == null) {
       synchronized (KafkaPixyGrpc.class) {
         if ((getGetOffsetsMethod = KafkaPixyGrpc.getGetOffsetsMethod) == null) {
           KafkaPixyGrpc.getGetOffsetsMethod = getGetOffsetsMethod =
-              io.grpc.MethodDescriptor.<mailgun.kafkapixy.GetOffsetsRq, mailgun.kafkapixy.GetOffsetsRs>newBuilder()
+              io.grpc.MethodDescriptor.<GetOffsetsRq, GetOffsetsRs>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "GetOffsets"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  mailgun.kafkapixy.GetOffsetsRq.getDefaultInstance()))
+                  GetOffsetsRq.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  mailgun.kafkapixy.GetOffsetsRs.getDefaultInstance()))
+                  GetOffsetsRs.getDefaultInstance()))
               .setSchemaDescriptor(new KafkaPixyMethodDescriptorSupplier("GetOffsets"))
               .build();
         }
@@ -144,28 +144,28 @@ public final class KafkaPixyGrpc {
   }
 
   private static volatile io.grpc.MethodDescriptor<SetOffsetsRq,
-      mailgun.kafkapixy.SetOffsetsRs> getSetOffsetsMethod;
+      SetOffsetsRs> getSetOffsetsMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "SetOffsets",
-      requestType = mailgun.kafkapixy.SetOffsetsRq.class,
-      responseType = mailgun.kafkapixy.SetOffsetsRs.class,
+      requestType = SetOffsetsRq.class,
+      responseType = SetOffsetsRs.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
   public static io.grpc.MethodDescriptor<SetOffsetsRq,
-      mailgun.kafkapixy.SetOffsetsRs> getSetOffsetsMethod() {
-    io.grpc.MethodDescriptor<SetOffsetsRq, mailgun.kafkapixy.SetOffsetsRs> getSetOffsetsMethod;
+      SetOffsetsRs> getSetOffsetsMethod() {
+    io.grpc.MethodDescriptor<SetOffsetsRq, SetOffsetsRs> getSetOffsetsMethod;
     if ((getSetOffsetsMethod = KafkaPixyGrpc.getSetOffsetsMethod) == null) {
       synchronized (KafkaPixyGrpc.class) {
         if ((getSetOffsetsMethod = KafkaPixyGrpc.getSetOffsetsMethod) == null) {
           KafkaPixyGrpc.getSetOffsetsMethod = getSetOffsetsMethod =
-              io.grpc.MethodDescriptor.<mailgun.kafkapixy.SetOffsetsRq, mailgun.kafkapixy.SetOffsetsRs>newBuilder()
+              io.grpc.MethodDescriptor.<SetOffsetsRq, SetOffsetsRs>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "SetOffsets"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  mailgun.kafkapixy.SetOffsetsRq.getDefaultInstance()))
+                  SetOffsetsRq.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  mailgun.kafkapixy.SetOffsetsRs.getDefaultInstance()))
+                  SetOffsetsRs.getDefaultInstance()))
               .setSchemaDescriptor(new KafkaPixyMethodDescriptorSupplier("SetOffsets"))
               .build();
         }
@@ -179,8 +179,8 @@ public final class KafkaPixyGrpc {
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "ListTopics",
-      requestType = mailgun.kafkapixy.ListTopicRq.class,
-      responseType = mailgun.kafkapixy.ListTopicRs.class,
+      requestType = ListTopicRq.class,
+      responseType = ListTopicRs.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
   public static io.grpc.MethodDescriptor<ListTopicRq,
       ListTopicRs> getListTopicsMethod() {
@@ -189,14 +189,14 @@ public final class KafkaPixyGrpc {
       synchronized (KafkaPixyGrpc.class) {
         if ((getListTopicsMethod = KafkaPixyGrpc.getListTopicsMethod) == null) {
           KafkaPixyGrpc.getListTopicsMethod = getListTopicsMethod =
-              io.grpc.MethodDescriptor.<mailgun.kafkapixy.ListTopicRq, mailgun.kafkapixy.ListTopicRs>newBuilder()
+              io.grpc.MethodDescriptor.<ListTopicRq, ListTopicRs>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "ListTopics"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  mailgun.kafkapixy.ListTopicRq.getDefaultInstance()))
+                  ListTopicRq.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  mailgun.kafkapixy.ListTopicRs.getDefaultInstance()))
+                  ListTopicRs.getDefaultInstance()))
               .setSchemaDescriptor(new KafkaPixyMethodDescriptorSupplier("ListTopics"))
               .build();
         }
@@ -210,8 +210,8 @@ public final class KafkaPixyGrpc {
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "ListConsumers",
-      requestType = mailgun.kafkapixy.ListConsumersRq.class,
-      responseType = mailgun.kafkapixy.ListConsumersRs.class,
+      requestType = ListConsumersRq.class,
+      responseType = ListConsumersRs.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
   public static io.grpc.MethodDescriptor<ListConsumersRq,
       ListConsumersRs> getListConsumersMethod() {
@@ -220,14 +220,14 @@ public final class KafkaPixyGrpc {
       synchronized (KafkaPixyGrpc.class) {
         if ((getListConsumersMethod = KafkaPixyGrpc.getListConsumersMethod) == null) {
           KafkaPixyGrpc.getListConsumersMethod = getListConsumersMethod =
-              io.grpc.MethodDescriptor.<mailgun.kafkapixy.ListConsumersRq, mailgun.kafkapixy.ListConsumersRs>newBuilder()
+              io.grpc.MethodDescriptor.<ListConsumersRq, ListConsumersRs>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "ListConsumers"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  mailgun.kafkapixy.ListConsumersRq.getDefaultInstance()))
+                  ListConsumersRq.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  mailgun.kafkapixy.ListConsumersRs.getDefaultInstance()))
+                  ListConsumersRs.getDefaultInstance()))
               .setSchemaDescriptor(new KafkaPixyMethodDescriptorSupplier("ListConsumers"))
               .build();
         }
@@ -241,8 +241,8 @@ public final class KafkaPixyGrpc {
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "GetTopicMetadata",
-      requestType = mailgun.kafkapixy.GetTopicMetadataRq.class,
-      responseType = mailgun.kafkapixy.GetTopicMetadataRs.class,
+      requestType = GetTopicMetadataRq.class,
+      responseType = GetTopicMetadataRs.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
   public static io.grpc.MethodDescriptor<GetTopicMetadataRq,
       GetTopicMetadataRs> getGetTopicMetadataMethod() {
@@ -251,14 +251,14 @@ public final class KafkaPixyGrpc {
       synchronized (KafkaPixyGrpc.class) {
         if ((getGetTopicMetadataMethod = KafkaPixyGrpc.getGetTopicMetadataMethod) == null) {
           KafkaPixyGrpc.getGetTopicMetadataMethod = getGetTopicMetadataMethod =
-              io.grpc.MethodDescriptor.<mailgun.kafkapixy.GetTopicMetadataRq, mailgun.kafkapixy.GetTopicMetadataRs>newBuilder()
+              io.grpc.MethodDescriptor.<GetTopicMetadataRq, GetTopicMetadataRs>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "GetTopicMetadata"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  mailgun.kafkapixy.GetTopicMetadataRq.getDefaultInstance()))
+                  GetTopicMetadataRq.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  mailgun.kafkapixy.GetTopicMetadataRs.getDefaultInstance()))
+                  GetTopicMetadataRs.getDefaultInstance()))
               .setSchemaDescriptor(new KafkaPixyMethodDescriptorSupplier("GetTopicMetadata"))
               .build();
         }
@@ -339,8 +339,8 @@ public final class KafkaPixyGrpc {
      *  * Unavailable (14): the service is shutting down.
      * </pre>
      */
-    public void produce(mailgun.kafkapixy.ProdRq request,
-        io.grpc.stub.StreamObserver<ProdRs> responseObserver) {
+    public void produce(ProdRq request,
+                        io.grpc.stub.StreamObserver<ProdRs> responseObserver) {
       asyncUnimplementedUnaryCall(getProduceMethod(), responseObserver);
     }
 
@@ -377,8 +377,8 @@ public final class KafkaPixyGrpc {
      *  * Unavailable (14): the service is shutting down.
      * </pre>
      */
-    public void consumeNAck(mailgun.kafkapixy.ConsNAckRq request,
-        io.grpc.stub.StreamObserver<ConsRs> responseObserver) {
+    public void consumeNAck(ConsNAckRq request,
+                            io.grpc.stub.StreamObserver<ConsRs> responseObserver) {
       asyncUnimplementedUnaryCall(getConsumeNAckMethod(), responseObserver);
     }
 
@@ -393,8 +393,8 @@ public final class KafkaPixyGrpc {
      *  * Internal (13): see the status description and logs for details;
      * </pre>
      */
-    public void ack(mailgun.kafkapixy.AckRq request,
-        io.grpc.stub.StreamObserver<AckRs> responseObserver) {
+    public void ack(AckRq request,
+                    io.grpc.stub.StreamObserver<AckRs> responseObserver) {
       asyncUnimplementedUnaryCall(getAckMethod(), responseObserver);
     }
 
@@ -407,8 +407,8 @@ public final class KafkaPixyGrpc {
      *  * NotFound (5): If the group and or topic does not exist
      * </pre>
      */
-    public void getOffsets(mailgun.kafkapixy.GetOffsetsRq request,
-        io.grpc.stub.StreamObserver<GetOffsetsRs> responseObserver) {
+    public void getOffsets(GetOffsetsRq request,
+                           io.grpc.stub.StreamObserver<GetOffsetsRs> responseObserver) {
       asyncUnimplementedUnaryCall(getGetOffsetsMethod(), responseObserver);
     }
 
@@ -423,8 +423,8 @@ public final class KafkaPixyGrpc {
      *  * NotFound (5): If the group and or topic does not exist
      * </pre>
      */
-    public void setOffsets(mailgun.kafkapixy.SetOffsetsRq request,
-        io.grpc.stub.StreamObserver<mailgun.kafkapixy.SetOffsetsRs> responseObserver) {
+    public void setOffsets(SetOffsetsRq request,
+                           io.grpc.stub.StreamObserver<SetOffsetsRs> responseObserver) {
       asyncUnimplementedUnaryCall(getSetOffsetsMethod(), responseObserver);
     }
 
@@ -436,8 +436,8 @@ public final class KafkaPixyGrpc {
      *  * Internal (13): If Kafka returns an error on request
      * </pre>
      */
-    public void listTopics(mailgun.kafkapixy.ListTopicRq request,
-        io.grpc.stub.StreamObserver<ListTopicRs> responseObserver) {
+    public void listTopics(ListTopicRq request,
+                           io.grpc.stub.StreamObserver<ListTopicRs> responseObserver) {
       asyncUnimplementedUnaryCall(getListTopicsMethod(), responseObserver);
     }
 
@@ -449,8 +449,8 @@ public final class KafkaPixyGrpc {
      *  * Internal (13): If Kafka returns an error on request
      * </pre>
      */
-    public void listConsumers(mailgun.kafkapixy.ListConsumersRq request,
-        io.grpc.stub.StreamObserver<ListConsumersRs> responseObserver) {
+    public void listConsumers(ListConsumersRq request,
+                              io.grpc.stub.StreamObserver<ListConsumersRs> responseObserver) {
       asyncUnimplementedUnaryCall(getListConsumersMethod(), responseObserver);
     }
 
@@ -463,8 +463,8 @@ public final class KafkaPixyGrpc {
      *  * NotFound (5): If the topic does not exist
      * </pre>
      */
-    public void getTopicMetadata(mailgun.kafkapixy.GetTopicMetadataRq request,
-        io.grpc.stub.StreamObserver<GetTopicMetadataRs> responseObserver) {
+    public void getTopicMetadata(GetTopicMetadataRq request,
+                                 io.grpc.stub.StreamObserver<GetTopicMetadataRs> responseObserver) {
       asyncUnimplementedUnaryCall(getGetTopicMetadataMethod(), responseObserver);
     }
 
@@ -474,57 +474,57 @@ public final class KafkaPixyGrpc {
             getProduceMethod(),
             asyncUnaryCall(
               new MethodHandlers<
-                mailgun.kafkapixy.ProdRq,
-                mailgun.kafkapixy.ProdRs>(
+                ProdRq,
+                ProdRs>(
                   this, METHODID_PRODUCE)))
           .addMethod(
             getConsumeNAckMethod(),
             asyncUnaryCall(
               new MethodHandlers<
-                mailgun.kafkapixy.ConsNAckRq,
-                mailgun.kafkapixy.ConsRs>(
+                ConsNAckRq,
+                ConsRs>(
                   this, METHODID_CONSUME_NACK)))
           .addMethod(
             getAckMethod(),
             asyncUnaryCall(
               new MethodHandlers<
-                mailgun.kafkapixy.AckRq,
-                mailgun.kafkapixy.AckRs>(
+                AckRq,
+                AckRs>(
                   this, METHODID_ACK)))
           .addMethod(
             getGetOffsetsMethod(),
             asyncUnaryCall(
               new MethodHandlers<
-                mailgun.kafkapixy.GetOffsetsRq,
-                mailgun.kafkapixy.GetOffsetsRs>(
+                GetOffsetsRq,
+                GetOffsetsRs>(
                   this, METHODID_GET_OFFSETS)))
           .addMethod(
             getSetOffsetsMethod(),
             asyncUnaryCall(
               new MethodHandlers<
-                mailgun.kafkapixy.SetOffsetsRq,
-                mailgun.kafkapixy.SetOffsetsRs>(
+                SetOffsetsRq,
+                SetOffsetsRs>(
                   this, METHODID_SET_OFFSETS)))
           .addMethod(
             getListTopicsMethod(),
             asyncUnaryCall(
               new MethodHandlers<
-                mailgun.kafkapixy.ListTopicRq,
-                mailgun.kafkapixy.ListTopicRs>(
+                ListTopicRq,
+                ListTopicRs>(
                   this, METHODID_LIST_TOPICS)))
           .addMethod(
             getListConsumersMethod(),
             asyncUnaryCall(
               new MethodHandlers<
-                mailgun.kafkapixy.ListConsumersRq,
-                mailgun.kafkapixy.ListConsumersRs>(
+                ListConsumersRq,
+                ListConsumersRs>(
                   this, METHODID_LIST_CONSUMERS)))
           .addMethod(
             getGetTopicMetadataMethod(),
             asyncUnaryCall(
               new MethodHandlers<
-                mailgun.kafkapixy.GetTopicMetadataRq,
-                mailgun.kafkapixy.GetTopicMetadataRs>(
+                GetTopicMetadataRq,
+                GetTopicMetadataRs>(
                   this, METHODID_GET_TOPIC_METADATA)))
           .build();
     }
@@ -568,8 +568,8 @@ public final class KafkaPixyGrpc {
      *  * Unavailable (14): the service is shutting down.
      * </pre>
      */
-    public void produce(mailgun.kafkapixy.ProdRq request,
-        io.grpc.stub.StreamObserver<ProdRs> responseObserver) {
+    public void produce(ProdRq request,
+                        io.grpc.stub.StreamObserver<ProdRs> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(getProduceMethod(), getCallOptions()), request, responseObserver);
     }
@@ -607,8 +607,8 @@ public final class KafkaPixyGrpc {
      *  * Unavailable (14): the service is shutting down.
      * </pre>
      */
-    public void consumeNAck(mailgun.kafkapixy.ConsNAckRq request,
-        io.grpc.stub.StreamObserver<ConsRs> responseObserver) {
+    public void consumeNAck(ConsNAckRq request,
+                            io.grpc.stub.StreamObserver<ConsRs> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(getConsumeNAckMethod(), getCallOptions()), request, responseObserver);
     }
@@ -624,8 +624,8 @@ public final class KafkaPixyGrpc {
      *  * Internal (13): see the status description and logs for details;
      * </pre>
      */
-    public void ack(mailgun.kafkapixy.AckRq request,
-        io.grpc.stub.StreamObserver<AckRs> responseObserver) {
+    public void ack(AckRq request,
+                    io.grpc.stub.StreamObserver<AckRs> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(getAckMethod(), getCallOptions()), request, responseObserver);
     }
@@ -639,8 +639,8 @@ public final class KafkaPixyGrpc {
      *  * NotFound (5): If the group and or topic does not exist
      * </pre>
      */
-    public void getOffsets(mailgun.kafkapixy.GetOffsetsRq request,
-        io.grpc.stub.StreamObserver<GetOffsetsRs> responseObserver) {
+    public void getOffsets(GetOffsetsRq request,
+                           io.grpc.stub.StreamObserver<GetOffsetsRs> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(getGetOffsetsMethod(), getCallOptions()), request, responseObserver);
     }
@@ -656,8 +656,8 @@ public final class KafkaPixyGrpc {
      *  * NotFound (5): If the group and or topic does not exist
      * </pre>
      */
-    public void setOffsets(mailgun.kafkapixy.SetOffsetsRq request,
-        io.grpc.stub.StreamObserver<mailgun.kafkapixy.SetOffsetsRs> responseObserver) {
+    public void setOffsets(SetOffsetsRq request,
+                           io.grpc.stub.StreamObserver<SetOffsetsRs> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(getSetOffsetsMethod(), getCallOptions()), request, responseObserver);
     }
@@ -670,8 +670,8 @@ public final class KafkaPixyGrpc {
      *  * Internal (13): If Kafka returns an error on request
      * </pre>
      */
-    public void listTopics(mailgun.kafkapixy.ListTopicRq request,
-        io.grpc.stub.StreamObserver<ListTopicRs> responseObserver) {
+    public void listTopics(ListTopicRq request,
+                           io.grpc.stub.StreamObserver<ListTopicRs> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(getListTopicsMethod(), getCallOptions()), request, responseObserver);
     }
@@ -684,8 +684,8 @@ public final class KafkaPixyGrpc {
      *  * Internal (13): If Kafka returns an error on request
      * </pre>
      */
-    public void listConsumers(mailgun.kafkapixy.ListConsumersRq request,
-        io.grpc.stub.StreamObserver<ListConsumersRs> responseObserver) {
+    public void listConsumers(ListConsumersRq request,
+                              io.grpc.stub.StreamObserver<ListConsumersRs> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(getListConsumersMethod(), getCallOptions()), request, responseObserver);
     }
@@ -699,8 +699,8 @@ public final class KafkaPixyGrpc {
      *  * NotFound (5): If the topic does not exist
      * </pre>
      */
-    public void getTopicMetadata(mailgun.kafkapixy.GetTopicMetadataRq request,
-        io.grpc.stub.StreamObserver<GetTopicMetadataRs> responseObserver) {
+    public void getTopicMetadata(GetTopicMetadataRq request,
+                                 io.grpc.stub.StreamObserver<GetTopicMetadataRs> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(getGetTopicMetadataMethod(), getCallOptions()), request, responseObserver);
     }
@@ -744,7 +744,7 @@ public final class KafkaPixyGrpc {
      *  * Unavailable (14): the service is shutting down.
      * </pre>
      */
-    public mailgun.kafkapixy.ProdRs produce(mailgun.kafkapixy.ProdRq request) {
+    public ProdRs produce(ProdRq request) {
       return blockingUnaryCall(
           getChannel(), getProduceMethod(), getCallOptions(), request);
     }
@@ -782,7 +782,7 @@ public final class KafkaPixyGrpc {
      *  * Unavailable (14): the service is shutting down.
      * </pre>
      */
-    public mailgun.kafkapixy.ConsRs consumeNAck(mailgun.kafkapixy.ConsNAckRq request) {
+    public ConsRs consumeNAck(ConsNAckRq request) {
       return blockingUnaryCall(
           getChannel(), getConsumeNAckMethod(), getCallOptions(), request);
     }
@@ -798,7 +798,7 @@ public final class KafkaPixyGrpc {
      *  * Internal (13): see the status description and logs for details;
      * </pre>
      */
-    public mailgun.kafkapixy.AckRs ack(mailgun.kafkapixy.AckRq request) {
+    public AckRs ack(AckRq request) {
       return blockingUnaryCall(
           getChannel(), getAckMethod(), getCallOptions(), request);
     }
@@ -812,7 +812,7 @@ public final class KafkaPixyGrpc {
      *  * NotFound (5): If the group and or topic does not exist
      * </pre>
      */
-    public mailgun.kafkapixy.GetOffsetsRs getOffsets(mailgun.kafkapixy.GetOffsetsRq request) {
+    public GetOffsetsRs getOffsets(GetOffsetsRq request) {
       return blockingUnaryCall(
           getChannel(), getGetOffsetsMethod(), getCallOptions(), request);
     }
@@ -828,7 +828,7 @@ public final class KafkaPixyGrpc {
      *  * NotFound (5): If the group and or topic does not exist
      * </pre>
      */
-    public mailgun.kafkapixy.SetOffsetsRs setOffsets(mailgun.kafkapixy.SetOffsetsRq request) {
+    public SetOffsetsRs setOffsets(SetOffsetsRq request) {
       return blockingUnaryCall(
           getChannel(), getSetOffsetsMethod(), getCallOptions(), request);
     }
@@ -841,7 +841,7 @@ public final class KafkaPixyGrpc {
      *  * Internal (13): If Kafka returns an error on request
      * </pre>
      */
-    public mailgun.kafkapixy.ListTopicRs listTopics(mailgun.kafkapixy.ListTopicRq request) {
+    public ListTopicRs listTopics(ListTopicRq request) {
       return blockingUnaryCall(
           getChannel(), getListTopicsMethod(), getCallOptions(), request);
     }
@@ -854,7 +854,7 @@ public final class KafkaPixyGrpc {
      *  * Internal (13): If Kafka returns an error on request
      * </pre>
      */
-    public mailgun.kafkapixy.ListConsumersRs listConsumers(mailgun.kafkapixy.ListConsumersRq request) {
+    public ListConsumersRs listConsumers(ListConsumersRq request) {
       return blockingUnaryCall(
           getChannel(), getListConsumersMethod(), getCallOptions(), request);
     }
@@ -868,7 +868,7 @@ public final class KafkaPixyGrpc {
      *  * NotFound (5): If the topic does not exist
      * </pre>
      */
-    public mailgun.kafkapixy.GetTopicMetadataRs getTopicMetadata(mailgun.kafkapixy.GetTopicMetadataRq request) {
+    public GetTopicMetadataRs getTopicMetadata(GetTopicMetadataRq request) {
       return blockingUnaryCall(
           getChannel(), getGetTopicMetadataMethod(), getCallOptions(), request);
     }
@@ -912,8 +912,8 @@ public final class KafkaPixyGrpc {
      *  * Unavailable (14): the service is shutting down.
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<mailgun.kafkapixy.ProdRs> produce(
-        mailgun.kafkapixy.ProdRq request) {
+    public com.google.common.util.concurrent.ListenableFuture<ProdRs> produce(
+        ProdRq request) {
       return futureUnaryCall(
           getChannel().newCall(getProduceMethod(), getCallOptions()), request);
     }
@@ -951,8 +951,8 @@ public final class KafkaPixyGrpc {
      *  * Unavailable (14): the service is shutting down.
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<mailgun.kafkapixy.ConsRs> consumeNAck(
-        mailgun.kafkapixy.ConsNAckRq request) {
+    public com.google.common.util.concurrent.ListenableFuture<ConsRs> consumeNAck(
+        ConsNAckRq request) {
       return futureUnaryCall(
           getChannel().newCall(getConsumeNAckMethod(), getCallOptions()), request);
     }
@@ -968,8 +968,8 @@ public final class KafkaPixyGrpc {
      *  * Internal (13): see the status description and logs for details;
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<mailgun.kafkapixy.AckRs> ack(
-        mailgun.kafkapixy.AckRq request) {
+    public com.google.common.util.concurrent.ListenableFuture<AckRs> ack(
+        AckRq request) {
       return futureUnaryCall(
           getChannel().newCall(getAckMethod(), getCallOptions()), request);
     }
@@ -983,8 +983,8 @@ public final class KafkaPixyGrpc {
      *  * NotFound (5): If the group and or topic does not exist
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<mailgun.kafkapixy.GetOffsetsRs> getOffsets(
-        mailgun.kafkapixy.GetOffsetsRq request) {
+    public com.google.common.util.concurrent.ListenableFuture<GetOffsetsRs> getOffsets(
+        GetOffsetsRq request) {
       return futureUnaryCall(
           getChannel().newCall(getGetOffsetsMethod(), getCallOptions()), request);
     }
@@ -1000,8 +1000,8 @@ public final class KafkaPixyGrpc {
      *  * NotFound (5): If the group and or topic does not exist
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<mailgun.kafkapixy.SetOffsetsRs> setOffsets(
-        mailgun.kafkapixy.SetOffsetsRq request) {
+    public com.google.common.util.concurrent.ListenableFuture<SetOffsetsRs> setOffsets(
+        SetOffsetsRq request) {
       return futureUnaryCall(
           getChannel().newCall(getSetOffsetsMethod(), getCallOptions()), request);
     }
@@ -1014,8 +1014,8 @@ public final class KafkaPixyGrpc {
      *  * Internal (13): If Kafka returns an error on request
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<mailgun.kafkapixy.ListTopicRs> listTopics(
-        mailgun.kafkapixy.ListTopicRq request) {
+    public com.google.common.util.concurrent.ListenableFuture<ListTopicRs> listTopics(
+        ListTopicRq request) {
       return futureUnaryCall(
           getChannel().newCall(getListTopicsMethod(), getCallOptions()), request);
     }
@@ -1028,8 +1028,8 @@ public final class KafkaPixyGrpc {
      *  * Internal (13): If Kafka returns an error on request
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<mailgun.kafkapixy.ListConsumersRs> listConsumers(
-        mailgun.kafkapixy.ListConsumersRq request) {
+    public com.google.common.util.concurrent.ListenableFuture<ListConsumersRs> listConsumers(
+        ListConsumersRq request) {
       return futureUnaryCall(
           getChannel().newCall(getListConsumersMethod(), getCallOptions()), request);
     }
@@ -1043,8 +1043,8 @@ public final class KafkaPixyGrpc {
      *  * NotFound (5): If the topic does not exist
      * </pre>
      */
-    public com.google.common.util.concurrent.ListenableFuture<mailgun.kafkapixy.GetTopicMetadataRs> getTopicMetadata(
-        mailgun.kafkapixy.GetTopicMetadataRq request) {
+    public com.google.common.util.concurrent.ListenableFuture<GetTopicMetadataRs> getTopicMetadata(
+        GetTopicMetadataRq request) {
       return futureUnaryCall(
           getChannel().newCall(getGetTopicMetadataMethod(), getCallOptions()), request);
     }
@@ -1077,35 +1077,35 @@ public final class KafkaPixyGrpc {
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_PRODUCE:
-          serviceImpl.produce((mailgun.kafkapixy.ProdRq) request,
+          serviceImpl.produce((ProdRq) request,
               (io.grpc.stub.StreamObserver<ProdRs>) responseObserver);
           break;
         case METHODID_CONSUME_NACK:
-          serviceImpl.consumeNAck((mailgun.kafkapixy.ConsNAckRq) request,
+          serviceImpl.consumeNAck((ConsNAckRq) request,
               (io.grpc.stub.StreamObserver<ConsRs>) responseObserver);
           break;
         case METHODID_ACK:
-          serviceImpl.ack((mailgun.kafkapixy.AckRq) request,
+          serviceImpl.ack((AckRq) request,
               (io.grpc.stub.StreamObserver<AckRs>) responseObserver);
           break;
         case METHODID_GET_OFFSETS:
-          serviceImpl.getOffsets((mailgun.kafkapixy.GetOffsetsRq) request,
+          serviceImpl.getOffsets((GetOffsetsRq) request,
               (io.grpc.stub.StreamObserver<GetOffsetsRs>) responseObserver);
           break;
         case METHODID_SET_OFFSETS:
-          serviceImpl.setOffsets((mailgun.kafkapixy.SetOffsetsRq) request,
-              (io.grpc.stub.StreamObserver<mailgun.kafkapixy.SetOffsetsRs>) responseObserver);
+          serviceImpl.setOffsets((SetOffsetsRq) request,
+              (io.grpc.stub.StreamObserver<SetOffsetsRs>) responseObserver);
           break;
         case METHODID_LIST_TOPICS:
-          serviceImpl.listTopics((mailgun.kafkapixy.ListTopicRq) request,
+          serviceImpl.listTopics((ListTopicRq) request,
               (io.grpc.stub.StreamObserver<ListTopicRs>) responseObserver);
           break;
         case METHODID_LIST_CONSUMERS:
-          serviceImpl.listConsumers((mailgun.kafkapixy.ListConsumersRq) request,
+          serviceImpl.listConsumers((ListConsumersRq) request,
               (io.grpc.stub.StreamObserver<ListConsumersRs>) responseObserver);
           break;
         case METHODID_GET_TOPIC_METADATA:
-          serviceImpl.getTopicMetadata((mailgun.kafkapixy.GetTopicMetadataRq) request,
+          serviceImpl.getTopicMetadata((GetTopicMetadataRq) request,
               (io.grpc.stub.StreamObserver<GetTopicMetadataRs>) responseObserver);
           break;
         default:
@@ -1130,7 +1130,7 @@ public final class KafkaPixyGrpc {
 
     @Override
     public com.google.protobuf.Descriptors.FileDescriptor getFileDescriptor() {
-      return mailgun.kafkapixy.KafkaPixyProto.getDescriptor();
+      return KafkaPixyProto.getDescriptor();
     }
 
     @Override

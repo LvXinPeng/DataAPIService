@@ -20,24 +20,24 @@ public interface ListTopicRsOrBuilder extends
    * Use {@link #getTopicsMap()} instead.
    */
   @Deprecated
-  java.util.Map<String, mailgun.kafkapixy.GetTopicMetadataRs>
+  java.util.Map<String, GetTopicMetadataRs>
   getTopics();
   /**
    * <code>map&lt;string, .GetTopicMetadataRs&gt; topics = 1;</code>
    */
-  java.util.Map<String, mailgun.kafkapixy.GetTopicMetadataRs>
+  java.util.Map<String, GetTopicMetadataRs>
   getTopicsMap();
   /**
    * <code>map&lt;string, .GetTopicMetadataRs&gt; topics = 1;</code>
    */
 
-  mailgun.kafkapixy.GetTopicMetadataRs getTopicsOrDefault(
+  GetTopicMetadataRs getTopicsOrDefault(
           String key,
-          mailgun.kafkapixy.GetTopicMetadataRs defaultValue);
+          GetTopicMetadataRs defaultValue);
   /**
    * <code>map&lt;string, .GetTopicMetadataRs&gt; topics = 1;</code>
    */
 
-  mailgun.kafkapixy.GetTopicMetadataRs getTopicsOrThrow(
+  GetTopicMetadataRs getTopicsOrThrow(
           String key);
 }

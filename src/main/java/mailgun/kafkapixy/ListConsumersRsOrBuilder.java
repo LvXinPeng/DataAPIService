@@ -20,24 +20,24 @@ public interface ListConsumersRsOrBuilder extends
    * Use {@link #getGroupsMap()} instead.
    */
   @Deprecated
-  java.util.Map<String, mailgun.kafkapixy.ConsumerGroups>
+  java.util.Map<String, ConsumerGroups>
   getGroups();
   /**
    * <code>map&lt;string, .ConsumerGroups&gt; groups = 1;</code>
    */
-  java.util.Map<String, mailgun.kafkapixy.ConsumerGroups>
+  java.util.Map<String, ConsumerGroups>
   getGroupsMap();
   /**
    * <code>map&lt;string, .ConsumerGroups&gt; groups = 1;</code>
    */
 
-  mailgun.kafkapixy.ConsumerGroups getGroupsOrDefault(
+  ConsumerGroups getGroupsOrDefault(
           String key,
-          mailgun.kafkapixy.ConsumerGroups defaultValue);
+          ConsumerGroups defaultValue);
   /**
    * <code>map&lt;string, .ConsumerGroups&gt; groups = 1;</code>
    */
 
-  mailgun.kafkapixy.ConsumerGroups getGroupsOrThrow(
+  ConsumerGroups getGroupsOrThrow(
           String key);
 }

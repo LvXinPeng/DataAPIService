@@ -90,15 +90,15 @@ private static final long serialVersionUID = 0L;
   }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return mailgun.kafkapixy.KafkaPixyProto.internal_static_GetOffsetsRq_descriptor;
+    return KafkaPixyProto.internal_static_GetOffsetsRq_descriptor;
   }
 
   @Override
   protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return mailgun.kafkapixy.KafkaPixyProto.internal_static_GetOffsetsRq_fieldAccessorTable
+    return KafkaPixyProto.internal_static_GetOffsetsRq_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            mailgun.kafkapixy.GetOffsetsRq.class, mailgun.kafkapixy.GetOffsetsRq.Builder.class);
+            GetOffsetsRq.class, Builder.class);
   }
 
   public static final int CLUSTER_FIELD_NUMBER = 1;
@@ -290,10 +290,10 @@ private static final long serialVersionUID = 0L;
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof mailgun.kafkapixy.GetOffsetsRq)) {
+    if (!(obj instanceof GetOffsetsRq)) {
       return super.equals(obj);
     }
-    mailgun.kafkapixy.GetOffsetsRq other = (mailgun.kafkapixy.GetOffsetsRq) obj;
+    GetOffsetsRq other = (GetOffsetsRq) obj;
 
     if (!getCluster()
         .equals(other.getCluster())) return false;
@@ -323,69 +323,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static mailgun.kafkapixy.GetOffsetsRq parseFrom(
+  public static GetOffsetsRq parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static mailgun.kafkapixy.GetOffsetsRq parseFrom(
+  public static GetOffsetsRq parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static mailgun.kafkapixy.GetOffsetsRq parseFrom(
+  public static GetOffsetsRq parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static mailgun.kafkapixy.GetOffsetsRq parseFrom(
+  public static GetOffsetsRq parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static mailgun.kafkapixy.GetOffsetsRq parseFrom(byte[] data)
+  public static GetOffsetsRq parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static mailgun.kafkapixy.GetOffsetsRq parseFrom(
+  public static GetOffsetsRq parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static mailgun.kafkapixy.GetOffsetsRq parseFrom(java.io.InputStream input)
+  public static GetOffsetsRq parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static mailgun.kafkapixy.GetOffsetsRq parseFrom(
+  public static GetOffsetsRq parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static mailgun.kafkapixy.GetOffsetsRq parseDelimitedFrom(java.io.InputStream input)
+  public static GetOffsetsRq parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static mailgun.kafkapixy.GetOffsetsRq parseDelimitedFrom(
+  public static GetOffsetsRq parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static mailgun.kafkapixy.GetOffsetsRq parseFrom(
+  public static GetOffsetsRq parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static mailgun.kafkapixy.GetOffsetsRq parseFrom(
+  public static GetOffsetsRq parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -398,7 +398,7 @@ private static final long serialVersionUID = 0L;
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(mailgun.kafkapixy.GetOffsetsRq prototype) {
+  public static Builder newBuilder(GetOffsetsRq prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
   @Override
@@ -419,18 +419,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:GetOffsetsRq)
-      mailgun.kafkapixy.GetOffsetsRqOrBuilder {
+      GetOffsetsRqOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return mailgun.kafkapixy.KafkaPixyProto.internal_static_GetOffsetsRq_descriptor;
+      return KafkaPixyProto.internal_static_GetOffsetsRq_descriptor;
     }
 
     @Override
     protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return mailgun.kafkapixy.KafkaPixyProto.internal_static_GetOffsetsRq_fieldAccessorTable
+      return KafkaPixyProto.internal_static_GetOffsetsRq_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              mailgun.kafkapixy.GetOffsetsRq.class, mailgun.kafkapixy.GetOffsetsRq.Builder.class);
+              GetOffsetsRq.class, Builder.class);
     }
 
     // Construct using mailgun.kafkapixy.GetOffsetsRq.newBuilder()
@@ -463,17 +463,17 @@ private static final long serialVersionUID = 0L;
     @Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return mailgun.kafkapixy.KafkaPixyProto.internal_static_GetOffsetsRq_descriptor;
+      return KafkaPixyProto.internal_static_GetOffsetsRq_descriptor;
     }
 
     @Override
-    public mailgun.kafkapixy.GetOffsetsRq getDefaultInstanceForType() {
-      return mailgun.kafkapixy.GetOffsetsRq.getDefaultInstance();
+    public GetOffsetsRq getDefaultInstanceForType() {
+      return GetOffsetsRq.getDefaultInstance();
     }
 
     @Override
-    public mailgun.kafkapixy.GetOffsetsRq build() {
-      mailgun.kafkapixy.GetOffsetsRq result = buildPartial();
+    public GetOffsetsRq build() {
+      GetOffsetsRq result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
@@ -481,8 +481,8 @@ private static final long serialVersionUID = 0L;
     }
 
     @Override
-    public mailgun.kafkapixy.GetOffsetsRq buildPartial() {
-      mailgun.kafkapixy.GetOffsetsRq result = new mailgun.kafkapixy.GetOffsetsRq(this);
+    public GetOffsetsRq buildPartial() {
+      GetOffsetsRq result = new GetOffsetsRq(this);
       result.cluster_ = cluster_;
       result.topic_ = topic_;
       result.group_ = group_;
@@ -524,16 +524,16 @@ private static final long serialVersionUID = 0L;
     }
     @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof mailgun.kafkapixy.GetOffsetsRq) {
-        return mergeFrom((mailgun.kafkapixy.GetOffsetsRq)other);
+      if (other instanceof GetOffsetsRq) {
+        return mergeFrom((GetOffsetsRq)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(mailgun.kafkapixy.GetOffsetsRq other) {
-      if (other == mailgun.kafkapixy.GetOffsetsRq.getDefaultInstance()) return this;
+    public Builder mergeFrom(GetOffsetsRq other) {
+      if (other == GetOffsetsRq.getDefaultInstance()) return this;
       if (!other.getCluster().isEmpty()) {
         cluster_ = other.cluster_;
         onChanged();
@@ -561,11 +561,11 @@ private static final long serialVersionUID = 0L;
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      mailgun.kafkapixy.GetOffsetsRq parsedMessage = null;
+      GetOffsetsRq parsedMessage = null;
       try {
         parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        parsedMessage = (mailgun.kafkapixy.GetOffsetsRq) e.getUnfinishedMessage();
+        parsedMessage = (GetOffsetsRq) e.getUnfinishedMessage();
         throw e.unwrapIOException();
       } finally {
         if (parsedMessage != null) {
@@ -879,12 +879,12 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:GetOffsetsRq)
-  private static final mailgun.kafkapixy.GetOffsetsRq DEFAULT_INSTANCE;
+  private static final GetOffsetsRq DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new mailgun.kafkapixy.GetOffsetsRq();
+    DEFAULT_INSTANCE = new GetOffsetsRq();
   }
 
-  public static mailgun.kafkapixy.GetOffsetsRq getDefaultInstance() {
+  public static GetOffsetsRq getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
@@ -909,7 +909,7 @@ private static final long serialVersionUID = 0L;
   }
 
   @Override
-  public mailgun.kafkapixy.GetOffsetsRq getDefaultInstanceForType() {
+  public GetOffsetsRq getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

@@ -110,15 +110,15 @@ private static final long serialVersionUID = 0L;
   }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return mailgun.kafkapixy.KafkaPixyProto.internal_static_ConsNAckRq_descriptor;
+    return KafkaPixyProto.internal_static_ConsNAckRq_descriptor;
   }
 
   @Override
   protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return mailgun.kafkapixy.KafkaPixyProto.internal_static_ConsNAckRq_fieldAccessorTable
+    return KafkaPixyProto.internal_static_ConsNAckRq_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            mailgun.kafkapixy.ConsNAckRq.class, mailgun.kafkapixy.ConsNAckRq.Builder.class);
+            ConsNAckRq.class, Builder.class);
   }
 
   public static final int CLUSTER_FIELD_NUMBER = 1;
@@ -397,10 +397,10 @@ private static final long serialVersionUID = 0L;
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof mailgun.kafkapixy.ConsNAckRq)) {
+    if (!(obj instanceof ConsNAckRq)) {
       return super.equals(obj);
     }
-    mailgun.kafkapixy.ConsNAckRq other = (mailgun.kafkapixy.ConsNAckRq) obj;
+    ConsNAckRq other = (ConsNAckRq) obj;
 
     if (!getCluster()
         .equals(other.getCluster())) return false;
@@ -449,69 +449,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static mailgun.kafkapixy.ConsNAckRq parseFrom(
+  public static ConsNAckRq parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static mailgun.kafkapixy.ConsNAckRq parseFrom(
+  public static ConsNAckRq parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static mailgun.kafkapixy.ConsNAckRq parseFrom(
+  public static ConsNAckRq parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static mailgun.kafkapixy.ConsNAckRq parseFrom(
+  public static ConsNAckRq parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static mailgun.kafkapixy.ConsNAckRq parseFrom(byte[] data)
+  public static ConsNAckRq parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static mailgun.kafkapixy.ConsNAckRq parseFrom(
+  public static ConsNAckRq parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static mailgun.kafkapixy.ConsNAckRq parseFrom(java.io.InputStream input)
+  public static ConsNAckRq parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static mailgun.kafkapixy.ConsNAckRq parseFrom(
+  public static ConsNAckRq parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static mailgun.kafkapixy.ConsNAckRq parseDelimitedFrom(java.io.InputStream input)
+  public static ConsNAckRq parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static mailgun.kafkapixy.ConsNAckRq parseDelimitedFrom(
+  public static ConsNAckRq parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static mailgun.kafkapixy.ConsNAckRq parseFrom(
+  public static ConsNAckRq parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static mailgun.kafkapixy.ConsNAckRq parseFrom(
+  public static ConsNAckRq parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -524,7 +524,7 @@ private static final long serialVersionUID = 0L;
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(mailgun.kafkapixy.ConsNAckRq prototype) {
+  public static Builder newBuilder(ConsNAckRq prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
   @Override
@@ -545,18 +545,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:ConsNAckRq)
-      mailgun.kafkapixy.ConsNAckRqOrBuilder {
+      ConsNAckRqOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return mailgun.kafkapixy.KafkaPixyProto.internal_static_ConsNAckRq_descriptor;
+      return KafkaPixyProto.internal_static_ConsNAckRq_descriptor;
     }
 
     @Override
     protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return mailgun.kafkapixy.KafkaPixyProto.internal_static_ConsNAckRq_fieldAccessorTable
+      return KafkaPixyProto.internal_static_ConsNAckRq_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              mailgun.kafkapixy.ConsNAckRq.class, mailgun.kafkapixy.ConsNAckRq.Builder.class);
+              ConsNAckRq.class, Builder.class);
     }
 
     // Construct using mailgun.kafkapixy.ConsNAckRq.newBuilder()
@@ -597,17 +597,17 @@ private static final long serialVersionUID = 0L;
     @Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return mailgun.kafkapixy.KafkaPixyProto.internal_static_ConsNAckRq_descriptor;
+      return KafkaPixyProto.internal_static_ConsNAckRq_descriptor;
     }
 
     @Override
-    public mailgun.kafkapixy.ConsNAckRq getDefaultInstanceForType() {
-      return mailgun.kafkapixy.ConsNAckRq.getDefaultInstance();
+    public ConsNAckRq getDefaultInstanceForType() {
+      return ConsNAckRq.getDefaultInstance();
     }
 
     @Override
-    public mailgun.kafkapixy.ConsNAckRq build() {
-      mailgun.kafkapixy.ConsNAckRq result = buildPartial();
+    public ConsNAckRq build() {
+      ConsNAckRq result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
@@ -615,8 +615,8 @@ private static final long serialVersionUID = 0L;
     }
 
     @Override
-    public mailgun.kafkapixy.ConsNAckRq buildPartial() {
-      mailgun.kafkapixy.ConsNAckRq result = new mailgun.kafkapixy.ConsNAckRq(this);
+    public ConsNAckRq buildPartial() {
+      ConsNAckRq result = new ConsNAckRq(this);
       result.cluster_ = cluster_;
       result.topic_ = topic_;
       result.group_ = group_;
@@ -662,16 +662,16 @@ private static final long serialVersionUID = 0L;
     }
     @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof mailgun.kafkapixy.ConsNAckRq) {
-        return mergeFrom((mailgun.kafkapixy.ConsNAckRq)other);
+      if (other instanceof ConsNAckRq) {
+        return mergeFrom((ConsNAckRq)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(mailgun.kafkapixy.ConsNAckRq other) {
-      if (other == mailgun.kafkapixy.ConsNAckRq.getDefaultInstance()) return this;
+    public Builder mergeFrom(ConsNAckRq other) {
+      if (other == ConsNAckRq.getDefaultInstance()) return this;
       if (!other.getCluster().isEmpty()) {
         cluster_ = other.cluster_;
         onChanged();
@@ -711,11 +711,11 @@ private static final long serialVersionUID = 0L;
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      mailgun.kafkapixy.ConsNAckRq parsedMessage = null;
+      ConsNAckRq parsedMessage = null;
       try {
         parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        parsedMessage = (mailgun.kafkapixy.ConsNAckRq) e.getUnfinishedMessage();
+        parsedMessage = (ConsNAckRq) e.getUnfinishedMessage();
         throw e.unwrapIOException();
       } finally {
         if (parsedMessage != null) {
@@ -1198,12 +1198,12 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:ConsNAckRq)
-  private static final mailgun.kafkapixy.ConsNAckRq DEFAULT_INSTANCE;
+  private static final ConsNAckRq DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new mailgun.kafkapixy.ConsNAckRq();
+    DEFAULT_INSTANCE = new ConsNAckRq();
   }
 
-  public static mailgun.kafkapixy.ConsNAckRq getDefaultInstance() {
+  public static ConsNAckRq getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
@@ -1228,7 +1228,7 @@ private static final long serialVersionUID = 0L;
   }
 
   @Override
-  public mailgun.kafkapixy.ConsNAckRq getDefaultInstanceForType() {
+  public ConsNAckRq getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

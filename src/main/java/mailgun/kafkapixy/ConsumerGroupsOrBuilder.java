@@ -31,13 +31,13 @@ public interface ConsumerGroupsOrBuilder extends
    * <code>map&lt;string, .ConsumerPartitions&gt; consumers = 1;</code>
    */
 
-  mailgun.kafkapixy.ConsumerPartitions getConsumersOrDefault(
+  ConsumerPartitions getConsumersOrDefault(
           String key,
-          mailgun.kafkapixy.ConsumerPartitions defaultValue);
+          ConsumerPartitions defaultValue);
   /**
    * <code>map&lt;string, .ConsumerPartitions&gt; consumers = 1;</code>
    */
 
-  mailgun.kafkapixy.ConsumerPartitions getConsumersOrThrow(
+  ConsumerPartitions getConsumersOrThrow(
           String key);
 }

@@ -116,7 +116,7 @@ public interface ProdRqOrBuilder extends
    *
    * <code>repeated .RecordHeader headers = 7;</code>
    */
-  mailgun.kafkapixy.RecordHeader getHeaders(int index);
+  RecordHeader getHeaders(int index);
   /**
    * <pre>
    * Headers to include with the published message
@@ -132,7 +132,7 @@ public interface ProdRqOrBuilder extends
    *
    * <code>repeated .RecordHeader headers = 7;</code>
    */
-  java.util.List<? extends mailgun.kafkapixy.RecordHeaderOrBuilder>
+  java.util.List<? extends RecordHeaderOrBuilder>
       getHeadersOrBuilderList();
   /**
    * <pre>
@@ -141,6 +141,6 @@ public interface ProdRqOrBuilder extends
    *
    * <code>repeated .RecordHeader headers = 7;</code>
    */
-  mailgun.kafkapixy.RecordHeaderOrBuilder getHeadersOrBuilder(
+  RecordHeaderOrBuilder getHeadersOrBuilder(
           int index);
 }

@@ -113,15 +113,15 @@ private static final long serialVersionUID = 0L;
   }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return mailgun.kafkapixy.KafkaPixyProto.internal_static_PartitionOffset_descriptor;
+    return KafkaPixyProto.internal_static_PartitionOffset_descriptor;
   }
 
   @Override
   protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return mailgun.kafkapixy.KafkaPixyProto.internal_static_PartitionOffset_fieldAccessorTable
+    return KafkaPixyProto.internal_static_PartitionOffset_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            mailgun.kafkapixy.PartitionOffset.class, mailgun.kafkapixy.PartitionOffset.Builder.class);
+            PartitionOffset.class, Builder.class);
   }
 
   public static final int PARTITION_FIELD_NUMBER = 1;
@@ -393,10 +393,10 @@ private static final long serialVersionUID = 0L;
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof mailgun.kafkapixy.PartitionOffset)) {
+    if (!(obj instanceof PartitionOffset)) {
       return super.equals(obj);
     }
-    mailgun.kafkapixy.PartitionOffset other = (mailgun.kafkapixy.PartitionOffset) obj;
+    PartitionOffset other = (PartitionOffset) obj;
 
     if (getPartition()
         != other.getPartition()) return false;
@@ -451,69 +451,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static mailgun.kafkapixy.PartitionOffset parseFrom(
+  public static PartitionOffset parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static mailgun.kafkapixy.PartitionOffset parseFrom(
+  public static PartitionOffset parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static mailgun.kafkapixy.PartitionOffset parseFrom(
+  public static PartitionOffset parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static mailgun.kafkapixy.PartitionOffset parseFrom(
+  public static PartitionOffset parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static mailgun.kafkapixy.PartitionOffset parseFrom(byte[] data)
+  public static PartitionOffset parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static mailgun.kafkapixy.PartitionOffset parseFrom(
+  public static PartitionOffset parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static mailgun.kafkapixy.PartitionOffset parseFrom(java.io.InputStream input)
+  public static PartitionOffset parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static mailgun.kafkapixy.PartitionOffset parseFrom(
+  public static PartitionOffset parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static mailgun.kafkapixy.PartitionOffset parseDelimitedFrom(java.io.InputStream input)
+  public static PartitionOffset parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static mailgun.kafkapixy.PartitionOffset parseDelimitedFrom(
+  public static PartitionOffset parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static mailgun.kafkapixy.PartitionOffset parseFrom(
+  public static PartitionOffset parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static mailgun.kafkapixy.PartitionOffset parseFrom(
+  public static PartitionOffset parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -526,7 +526,7 @@ private static final long serialVersionUID = 0L;
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(mailgun.kafkapixy.PartitionOffset prototype) {
+  public static Builder newBuilder(PartitionOffset prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
   @Override
@@ -547,18 +547,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:PartitionOffset)
-      mailgun.kafkapixy.PartitionOffsetOrBuilder {
+      PartitionOffsetOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return mailgun.kafkapixy.KafkaPixyProto.internal_static_PartitionOffset_descriptor;
+      return KafkaPixyProto.internal_static_PartitionOffset_descriptor;
     }
 
     @Override
     protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return mailgun.kafkapixy.KafkaPixyProto.internal_static_PartitionOffset_fieldAccessorTable
+      return KafkaPixyProto.internal_static_PartitionOffset_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              mailgun.kafkapixy.PartitionOffset.class, mailgun.kafkapixy.PartitionOffset.Builder.class);
+              PartitionOffset.class, Builder.class);
     }
 
     // Construct using mailgun.kafkapixy.PartitionOffset.newBuilder()
@@ -601,17 +601,17 @@ private static final long serialVersionUID = 0L;
     @Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return mailgun.kafkapixy.KafkaPixyProto.internal_static_PartitionOffset_descriptor;
+      return KafkaPixyProto.internal_static_PartitionOffset_descriptor;
     }
 
     @Override
-    public mailgun.kafkapixy.PartitionOffset getDefaultInstanceForType() {
-      return mailgun.kafkapixy.PartitionOffset.getDefaultInstance();
+    public PartitionOffset getDefaultInstanceForType() {
+      return PartitionOffset.getDefaultInstance();
     }
 
     @Override
-    public mailgun.kafkapixy.PartitionOffset build() {
-      mailgun.kafkapixy.PartitionOffset result = buildPartial();
+    public PartitionOffset build() {
+      PartitionOffset result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
@@ -619,8 +619,8 @@ private static final long serialVersionUID = 0L;
     }
 
     @Override
-    public mailgun.kafkapixy.PartitionOffset buildPartial() {
-      mailgun.kafkapixy.PartitionOffset result = new mailgun.kafkapixy.PartitionOffset(this);
+    public PartitionOffset buildPartial() {
+      PartitionOffset result = new PartitionOffset(this);
       result.partition_ = partition_;
       result.begin_ = begin_;
       result.end_ = end_;
@@ -667,16 +667,16 @@ private static final long serialVersionUID = 0L;
     }
     @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof mailgun.kafkapixy.PartitionOffset) {
-        return mergeFrom((mailgun.kafkapixy.PartitionOffset)other);
+      if (other instanceof PartitionOffset) {
+        return mergeFrom((PartitionOffset)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(mailgun.kafkapixy.PartitionOffset other) {
-      if (other == mailgun.kafkapixy.PartitionOffset.getDefaultInstance()) return this;
+    public Builder mergeFrom(PartitionOffset other) {
+      if (other == PartitionOffset.getDefaultInstance()) return this;
       if (other.getPartition() != 0) {
         setPartition(other.getPartition());
       }
@@ -718,11 +718,11 @@ private static final long serialVersionUID = 0L;
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      mailgun.kafkapixy.PartitionOffset parsedMessage = null;
+      PartitionOffset parsedMessage = null;
       try {
         parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        parsedMessage = (mailgun.kafkapixy.PartitionOffset) e.getUnfinishedMessage();
+        parsedMessage = (PartitionOffset) e.getUnfinishedMessage();
         throw e.unwrapIOException();
       } finally {
         if (parsedMessage != null) {
@@ -1198,12 +1198,12 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:PartitionOffset)
-  private static final mailgun.kafkapixy.PartitionOffset DEFAULT_INSTANCE;
+  private static final PartitionOffset DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new mailgun.kafkapixy.PartitionOffset();
+    DEFAULT_INSTANCE = new PartitionOffset();
   }
 
-  public static mailgun.kafkapixy.PartitionOffset getDefaultInstance() {
+  public static PartitionOffset getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
@@ -1228,7 +1228,7 @@ private static final long serialVersionUID = 0L;
   }
 
   @Override
-  public mailgun.kafkapixy.PartitionOffset getDefaultInstanceForType() {
+  public PartitionOffset getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

@@ -90,15 +90,15 @@ private static final long serialVersionUID = 0L;
   }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return mailgun.kafkapixy.KafkaPixyProto.internal_static_ListConsumersRq_descriptor;
+    return KafkaPixyProto.internal_static_ListConsumersRq_descriptor;
   }
 
   @Override
   protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return mailgun.kafkapixy.KafkaPixyProto.internal_static_ListConsumersRq_fieldAccessorTable
+    return KafkaPixyProto.internal_static_ListConsumersRq_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            mailgun.kafkapixy.ListConsumersRq.class, mailgun.kafkapixy.ListConsumersRq.Builder.class);
+            ListConsumersRq.class, Builder.class);
   }
 
   public static final int CLUSTER_FIELD_NUMBER = 1;
@@ -290,10 +290,10 @@ private static final long serialVersionUID = 0L;
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof mailgun.kafkapixy.ListConsumersRq)) {
+    if (!(obj instanceof ListConsumersRq)) {
       return super.equals(obj);
     }
-    mailgun.kafkapixy.ListConsumersRq other = (mailgun.kafkapixy.ListConsumersRq) obj;
+    ListConsumersRq other = (ListConsumersRq) obj;
 
     if (!getCluster()
         .equals(other.getCluster())) return false;
@@ -323,69 +323,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static mailgun.kafkapixy.ListConsumersRq parseFrom(
+  public static ListConsumersRq parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static mailgun.kafkapixy.ListConsumersRq parseFrom(
+  public static ListConsumersRq parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static mailgun.kafkapixy.ListConsumersRq parseFrom(
+  public static ListConsumersRq parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static mailgun.kafkapixy.ListConsumersRq parseFrom(
+  public static ListConsumersRq parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static mailgun.kafkapixy.ListConsumersRq parseFrom(byte[] data)
+  public static ListConsumersRq parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static mailgun.kafkapixy.ListConsumersRq parseFrom(
+  public static ListConsumersRq parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static mailgun.kafkapixy.ListConsumersRq parseFrom(java.io.InputStream input)
+  public static ListConsumersRq parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static mailgun.kafkapixy.ListConsumersRq parseFrom(
+  public static ListConsumersRq parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static mailgun.kafkapixy.ListConsumersRq parseDelimitedFrom(java.io.InputStream input)
+  public static ListConsumersRq parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static mailgun.kafkapixy.ListConsumersRq parseDelimitedFrom(
+  public static ListConsumersRq parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static mailgun.kafkapixy.ListConsumersRq parseFrom(
+  public static ListConsumersRq parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static mailgun.kafkapixy.ListConsumersRq parseFrom(
+  public static ListConsumersRq parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -398,7 +398,7 @@ private static final long serialVersionUID = 0L;
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(mailgun.kafkapixy.ListConsumersRq prototype) {
+  public static Builder newBuilder(ListConsumersRq prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
   @Override
@@ -419,18 +419,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:ListConsumersRq)
-      mailgun.kafkapixy.ListConsumersRqOrBuilder {
+      ListConsumersRqOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return mailgun.kafkapixy.KafkaPixyProto.internal_static_ListConsumersRq_descriptor;
+      return KafkaPixyProto.internal_static_ListConsumersRq_descriptor;
     }
 
     @Override
     protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return mailgun.kafkapixy.KafkaPixyProto.internal_static_ListConsumersRq_fieldAccessorTable
+      return KafkaPixyProto.internal_static_ListConsumersRq_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              mailgun.kafkapixy.ListConsumersRq.class, mailgun.kafkapixy.ListConsumersRq.Builder.class);
+              ListConsumersRq.class, Builder.class);
     }
 
     // Construct using mailgun.kafkapixy.ListConsumersRq.newBuilder()
@@ -463,17 +463,17 @@ private static final long serialVersionUID = 0L;
     @Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return mailgun.kafkapixy.KafkaPixyProto.internal_static_ListConsumersRq_descriptor;
+      return KafkaPixyProto.internal_static_ListConsumersRq_descriptor;
     }
 
     @Override
-    public mailgun.kafkapixy.ListConsumersRq getDefaultInstanceForType() {
-      return mailgun.kafkapixy.ListConsumersRq.getDefaultInstance();
+    public ListConsumersRq getDefaultInstanceForType() {
+      return ListConsumersRq.getDefaultInstance();
     }
 
     @Override
-    public mailgun.kafkapixy.ListConsumersRq build() {
-      mailgun.kafkapixy.ListConsumersRq result = buildPartial();
+    public ListConsumersRq build() {
+      ListConsumersRq result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
@@ -481,8 +481,8 @@ private static final long serialVersionUID = 0L;
     }
 
     @Override
-    public mailgun.kafkapixy.ListConsumersRq buildPartial() {
-      mailgun.kafkapixy.ListConsumersRq result = new mailgun.kafkapixy.ListConsumersRq(this);
+    public ListConsumersRq buildPartial() {
+      ListConsumersRq result = new ListConsumersRq(this);
       result.cluster_ = cluster_;
       result.topic_ = topic_;
       result.group_ = group_;
@@ -524,16 +524,16 @@ private static final long serialVersionUID = 0L;
     }
     @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof mailgun.kafkapixy.ListConsumersRq) {
-        return mergeFrom((mailgun.kafkapixy.ListConsumersRq)other);
+      if (other instanceof ListConsumersRq) {
+        return mergeFrom((ListConsumersRq)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(mailgun.kafkapixy.ListConsumersRq other) {
-      if (other == mailgun.kafkapixy.ListConsumersRq.getDefaultInstance()) return this;
+    public Builder mergeFrom(ListConsumersRq other) {
+      if (other == ListConsumersRq.getDefaultInstance()) return this;
       if (!other.getCluster().isEmpty()) {
         cluster_ = other.cluster_;
         onChanged();
@@ -561,11 +561,11 @@ private static final long serialVersionUID = 0L;
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      mailgun.kafkapixy.ListConsumersRq parsedMessage = null;
+      ListConsumersRq parsedMessage = null;
       try {
         parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        parsedMessage = (mailgun.kafkapixy.ListConsumersRq) e.getUnfinishedMessage();
+        parsedMessage = (ListConsumersRq) e.getUnfinishedMessage();
         throw e.unwrapIOException();
       } finally {
         if (parsedMessage != null) {
@@ -879,12 +879,12 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:ListConsumersRq)
-  private static final mailgun.kafkapixy.ListConsumersRq DEFAULT_INSTANCE;
+  private static final ListConsumersRq DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new mailgun.kafkapixy.ListConsumersRq();
+    DEFAULT_INSTANCE = new ListConsumersRq();
   }
 
-  public static mailgun.kafkapixy.ListConsumersRq getDefaultInstance() {
+  public static ListConsumersRq getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
@@ -909,7 +909,7 @@ private static final long serialVersionUID = 0L;
   }
 
   @Override
-  public mailgun.kafkapixy.ListConsumersRq getDefaultInstanceForType() {
+  public ListConsumersRq getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

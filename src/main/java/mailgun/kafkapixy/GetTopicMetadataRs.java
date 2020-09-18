@@ -70,11 +70,11 @@ private static final long serialVersionUID = 0L;
           }
           case 26: {
             if (!((mutable_bitField0_ & 0x00000002) != 0)) {
-              partitions_ = new java.util.ArrayList<mailgun.kafkapixy.PartitionMetadata>();
+              partitions_ = new java.util.ArrayList<PartitionMetadata>();
               mutable_bitField0_ |= 0x00000002;
             }
             partitions_.add(
-                input.readMessage(mailgun.kafkapixy.PartitionMetadata.parser(), extensionRegistry));
+                input.readMessage(PartitionMetadata.parser(), extensionRegistry));
             break;
           }
           default: {
@@ -101,7 +101,7 @@ private static final long serialVersionUID = 0L;
   }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return mailgun.kafkapixy.KafkaPixyProto.internal_static_GetTopicMetadataRs_descriptor;
+    return KafkaPixyProto.internal_static_GetTopicMetadataRs_descriptor;
   }
 
   @SuppressWarnings({"rawtypes"})
@@ -119,9 +119,9 @@ private static final long serialVersionUID = 0L;
   @Override
   protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return mailgun.kafkapixy.KafkaPixyProto.internal_static_GetTopicMetadataRs_fieldAccessorTable
+    return KafkaPixyProto.internal_static_GetTopicMetadataRs_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            mailgun.kafkapixy.GetTopicMetadataRs.class, mailgun.kafkapixy.GetTopicMetadataRs.Builder.class);
+            GetTopicMetadataRs.class, Builder.class);
   }
 
   public static final int VERSION_FIELD_NUMBER = 1;
@@ -145,7 +145,7 @@ private static final long serialVersionUID = 0L;
         String, String> defaultEntry =
             com.google.protobuf.MapEntry
             .<String, String>newDefaultInstance(
-                mailgun.kafkapixy.KafkaPixyProto.internal_static_GetTopicMetadataRs_ConfigEntry_descriptor,
+                KafkaPixyProto.internal_static_GetTopicMetadataRs_ConfigEntry_descriptor,
                 com.google.protobuf.WireFormat.FieldType.STRING,
                 "",
                 com.google.protobuf.WireFormat.FieldType.STRING,
@@ -237,7 +237,7 @@ private static final long serialVersionUID = 0L;
   }
 
   public static final int PARTITIONS_FIELD_NUMBER = 3;
-  private java.util.List<mailgun.kafkapixy.PartitionMetadata> partitions_;
+  private java.util.List<PartitionMetadata> partitions_;
   /**
    * <pre>
    * Optional list of metadata for the partitions of this topic
@@ -246,7 +246,7 @@ private static final long serialVersionUID = 0L;
    * <code>repeated .PartitionMetadata partitions = 3;</code>
    */
   @Override
-  public java.util.List<mailgun.kafkapixy.PartitionMetadata> getPartitionsList() {
+  public java.util.List<PartitionMetadata> getPartitionsList() {
     return partitions_;
   }
   /**
@@ -257,7 +257,7 @@ private static final long serialVersionUID = 0L;
    * <code>repeated .PartitionMetadata partitions = 3;</code>
    */
   @Override
-  public java.util.List<? extends mailgun.kafkapixy.PartitionMetadataOrBuilder>
+  public java.util.List<? extends PartitionMetadataOrBuilder>
       getPartitionsOrBuilderList() {
     return partitions_;
   }
@@ -280,7 +280,7 @@ private static final long serialVersionUID = 0L;
    * <code>repeated .PartitionMetadata partitions = 3;</code>
    */
   @Override
-  public mailgun.kafkapixy.PartitionMetadata getPartitions(int index) {
+  public PartitionMetadata getPartitions(int index) {
     return partitions_.get(index);
   }
   /**
@@ -291,7 +291,7 @@ private static final long serialVersionUID = 0L;
    * <code>repeated .PartitionMetadata partitions = 3;</code>
    */
   @Override
-  public mailgun.kafkapixy.PartitionMetadataOrBuilder getPartitionsOrBuilder(
+  public PartitionMetadataOrBuilder getPartitionsOrBuilder(
       int index) {
     return partitions_.get(index);
   }
@@ -359,10 +359,10 @@ private static final long serialVersionUID = 0L;
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof mailgun.kafkapixy.GetTopicMetadataRs)) {
+    if (!(obj instanceof GetTopicMetadataRs)) {
       return super.equals(obj);
     }
-    mailgun.kafkapixy.GetTopicMetadataRs other = (mailgun.kafkapixy.GetTopicMetadataRs) obj;
+    GetTopicMetadataRs other = (GetTopicMetadataRs) obj;
 
     if (getVersion()
         != other.getVersion()) return false;
@@ -396,69 +396,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static mailgun.kafkapixy.GetTopicMetadataRs parseFrom(
+  public static GetTopicMetadataRs parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static mailgun.kafkapixy.GetTopicMetadataRs parseFrom(
+  public static GetTopicMetadataRs parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static mailgun.kafkapixy.GetTopicMetadataRs parseFrom(
+  public static GetTopicMetadataRs parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static mailgun.kafkapixy.GetTopicMetadataRs parseFrom(
+  public static GetTopicMetadataRs parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static mailgun.kafkapixy.GetTopicMetadataRs parseFrom(byte[] data)
+  public static GetTopicMetadataRs parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static mailgun.kafkapixy.GetTopicMetadataRs parseFrom(
+  public static GetTopicMetadataRs parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static mailgun.kafkapixy.GetTopicMetadataRs parseFrom(java.io.InputStream input)
+  public static GetTopicMetadataRs parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static mailgun.kafkapixy.GetTopicMetadataRs parseFrom(
+  public static GetTopicMetadataRs parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static mailgun.kafkapixy.GetTopicMetadataRs parseDelimitedFrom(java.io.InputStream input)
+  public static GetTopicMetadataRs parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static mailgun.kafkapixy.GetTopicMetadataRs parseDelimitedFrom(
+  public static GetTopicMetadataRs parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static mailgun.kafkapixy.GetTopicMetadataRs parseFrom(
+  public static GetTopicMetadataRs parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static mailgun.kafkapixy.GetTopicMetadataRs parseFrom(
+  public static GetTopicMetadataRs parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -471,7 +471,7 @@ private static final long serialVersionUID = 0L;
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(mailgun.kafkapixy.GetTopicMetadataRs prototype) {
+  public static Builder newBuilder(GetTopicMetadataRs prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
   @Override
@@ -492,10 +492,10 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:GetTopicMetadataRs)
-      mailgun.kafkapixy.GetTopicMetadataRsOrBuilder {
+      GetTopicMetadataRsOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return mailgun.kafkapixy.KafkaPixyProto.internal_static_GetTopicMetadataRs_descriptor;
+      return KafkaPixyProto.internal_static_GetTopicMetadataRs_descriptor;
     }
 
     @SuppressWarnings({"rawtypes"})
@@ -523,9 +523,9 @@ private static final long serialVersionUID = 0L;
     @Override
     protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return mailgun.kafkapixy.KafkaPixyProto.internal_static_GetTopicMetadataRs_fieldAccessorTable
+      return KafkaPixyProto.internal_static_GetTopicMetadataRs_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              mailgun.kafkapixy.GetTopicMetadataRs.class, mailgun.kafkapixy.GetTopicMetadataRs.Builder.class);
+              GetTopicMetadataRs.class, Builder.class);
     }
 
     // Construct using mailgun.kafkapixy.GetTopicMetadataRs.newBuilder()
@@ -562,17 +562,17 @@ private static final long serialVersionUID = 0L;
     @Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return mailgun.kafkapixy.KafkaPixyProto.internal_static_GetTopicMetadataRs_descriptor;
+      return KafkaPixyProto.internal_static_GetTopicMetadataRs_descriptor;
     }
 
     @Override
-    public mailgun.kafkapixy.GetTopicMetadataRs getDefaultInstanceForType() {
-      return mailgun.kafkapixy.GetTopicMetadataRs.getDefaultInstance();
+    public GetTopicMetadataRs getDefaultInstanceForType() {
+      return GetTopicMetadataRs.getDefaultInstance();
     }
 
     @Override
-    public mailgun.kafkapixy.GetTopicMetadataRs build() {
-      mailgun.kafkapixy.GetTopicMetadataRs result = buildPartial();
+    public GetTopicMetadataRs build() {
+      GetTopicMetadataRs result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
@@ -580,8 +580,8 @@ private static final long serialVersionUID = 0L;
     }
 
     @Override
-    public mailgun.kafkapixy.GetTopicMetadataRs buildPartial() {
-      mailgun.kafkapixy.GetTopicMetadataRs result = new mailgun.kafkapixy.GetTopicMetadataRs(this);
+    public GetTopicMetadataRs buildPartial() {
+      GetTopicMetadataRs result = new GetTopicMetadataRs(this);
       int from_bitField0_ = bitField0_;
       result.version_ = version_;
       result.config_ = internalGetConfig();
@@ -633,16 +633,16 @@ private static final long serialVersionUID = 0L;
     }
     @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof mailgun.kafkapixy.GetTopicMetadataRs) {
-        return mergeFrom((mailgun.kafkapixy.GetTopicMetadataRs)other);
+      if (other instanceof GetTopicMetadataRs) {
+        return mergeFrom((GetTopicMetadataRs)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(mailgun.kafkapixy.GetTopicMetadataRs other) {
-      if (other == mailgun.kafkapixy.GetTopicMetadataRs.getDefaultInstance()) return this;
+    public Builder mergeFrom(GetTopicMetadataRs other) {
+      if (other == GetTopicMetadataRs.getDefaultInstance()) return this;
       if (other.getVersion() != 0) {
         setVersion(other.getVersion());
       }
@@ -689,11 +689,11 @@ private static final long serialVersionUID = 0L;
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      mailgun.kafkapixy.GetTopicMetadataRs parsedMessage = null;
+      GetTopicMetadataRs parsedMessage = null;
       try {
         parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        parsedMessage = (mailgun.kafkapixy.GetTopicMetadataRs) e.getUnfinishedMessage();
+        parsedMessage = (GetTopicMetadataRs) e.getUnfinishedMessage();
         throw e.unwrapIOException();
       } finally {
         if (parsedMessage != null) {
@@ -903,17 +903,17 @@ private static final long serialVersionUID = 0L;
       return this;
     }
 
-    private java.util.List<mailgun.kafkapixy.PartitionMetadata> partitions_ =
+    private java.util.List<PartitionMetadata> partitions_ =
       java.util.Collections.emptyList();
     private void ensurePartitionsIsMutable() {
       if (!((bitField0_ & 0x00000002) != 0)) {
-        partitions_ = new java.util.ArrayList<mailgun.kafkapixy.PartitionMetadata>(partitions_);
+        partitions_ = new java.util.ArrayList<PartitionMetadata>(partitions_);
         bitField0_ |= 0x00000002;
        }
     }
 
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        mailgun.kafkapixy.PartitionMetadata, mailgun.kafkapixy.PartitionMetadata.Builder, mailgun.kafkapixy.PartitionMetadataOrBuilder> partitionsBuilder_;
+        PartitionMetadata, PartitionMetadata.Builder, PartitionMetadataOrBuilder> partitionsBuilder_;
 
     /**
      * <pre>
@@ -922,7 +922,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .PartitionMetadata partitions = 3;</code>
      */
-    public java.util.List<mailgun.kafkapixy.PartitionMetadata> getPartitionsList() {
+    public java.util.List<PartitionMetadata> getPartitionsList() {
       if (partitionsBuilder_ == null) {
         return java.util.Collections.unmodifiableList(partitions_);
       } else {
@@ -950,7 +950,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .PartitionMetadata partitions = 3;</code>
      */
-    public mailgun.kafkapixy.PartitionMetadata getPartitions(int index) {
+    public PartitionMetadata getPartitions(int index) {
       if (partitionsBuilder_ == null) {
         return partitions_.get(index);
       } else {
@@ -965,7 +965,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .PartitionMetadata partitions = 3;</code>
      */
     public Builder setPartitions(
-        int index, mailgun.kafkapixy.PartitionMetadata value) {
+        int index, PartitionMetadata value) {
       if (partitionsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -986,7 +986,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .PartitionMetadata partitions = 3;</code>
      */
     public Builder setPartitions(
-        int index, mailgun.kafkapixy.PartitionMetadata.Builder builderForValue) {
+        int index, PartitionMetadata.Builder builderForValue) {
       if (partitionsBuilder_ == null) {
         ensurePartitionsIsMutable();
         partitions_.set(index, builderForValue.build());
@@ -1003,7 +1003,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .PartitionMetadata partitions = 3;</code>
      */
-    public Builder addPartitions(mailgun.kafkapixy.PartitionMetadata value) {
+    public Builder addPartitions(PartitionMetadata value) {
       if (partitionsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1024,7 +1024,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .PartitionMetadata partitions = 3;</code>
      */
     public Builder addPartitions(
-        int index, mailgun.kafkapixy.PartitionMetadata value) {
+        int index, PartitionMetadata value) {
       if (partitionsBuilder_ == null) {
         if (value == null) {
           throw new NullPointerException();
@@ -1045,7 +1045,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .PartitionMetadata partitions = 3;</code>
      */
     public Builder addPartitions(
-        mailgun.kafkapixy.PartitionMetadata.Builder builderForValue) {
+        PartitionMetadata.Builder builderForValue) {
       if (partitionsBuilder_ == null) {
         ensurePartitionsIsMutable();
         partitions_.add(builderForValue.build());
@@ -1063,7 +1063,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .PartitionMetadata partitions = 3;</code>
      */
     public Builder addPartitions(
-        int index, mailgun.kafkapixy.PartitionMetadata.Builder builderForValue) {
+        int index, PartitionMetadata.Builder builderForValue) {
       if (partitionsBuilder_ == null) {
         ensurePartitionsIsMutable();
         partitions_.add(index, builderForValue.build());
@@ -1081,7 +1081,7 @@ private static final long serialVersionUID = 0L;
      * <code>repeated .PartitionMetadata partitions = 3;</code>
      */
     public Builder addAllPartitions(
-        Iterable<? extends mailgun.kafkapixy.PartitionMetadata> values) {
+        Iterable<? extends PartitionMetadata> values) {
       if (partitionsBuilder_ == null) {
         ensurePartitionsIsMutable();
         com.google.protobuf.AbstractMessageLite.Builder.addAll(
@@ -1133,7 +1133,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .PartitionMetadata partitions = 3;</code>
      */
-    public mailgun.kafkapixy.PartitionMetadata.Builder getPartitionsBuilder(
+    public PartitionMetadata.Builder getPartitionsBuilder(
         int index) {
       return getPartitionsFieldBuilder().getBuilder(index);
     }
@@ -1144,7 +1144,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .PartitionMetadata partitions = 3;</code>
      */
-    public mailgun.kafkapixy.PartitionMetadataOrBuilder getPartitionsOrBuilder(
+    public PartitionMetadataOrBuilder getPartitionsOrBuilder(
         int index) {
       if (partitionsBuilder_ == null) {
         return partitions_.get(index);  } else {
@@ -1158,7 +1158,7 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .PartitionMetadata partitions = 3;</code>
      */
-    public java.util.List<? extends mailgun.kafkapixy.PartitionMetadataOrBuilder>
+    public java.util.List<? extends PartitionMetadataOrBuilder>
          getPartitionsOrBuilderList() {
       if (partitionsBuilder_ != null) {
         return partitionsBuilder_.getMessageOrBuilderList();
@@ -1173,9 +1173,9 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .PartitionMetadata partitions = 3;</code>
      */
-    public mailgun.kafkapixy.PartitionMetadata.Builder addPartitionsBuilder() {
+    public PartitionMetadata.Builder addPartitionsBuilder() {
       return getPartitionsFieldBuilder().addBuilder(
-          mailgun.kafkapixy.PartitionMetadata.getDefaultInstance());
+          PartitionMetadata.getDefaultInstance());
     }
     /**
      * <pre>
@@ -1184,10 +1184,10 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .PartitionMetadata partitions = 3;</code>
      */
-    public mailgun.kafkapixy.PartitionMetadata.Builder addPartitionsBuilder(
+    public PartitionMetadata.Builder addPartitionsBuilder(
         int index) {
       return getPartitionsFieldBuilder().addBuilder(
-          index, mailgun.kafkapixy.PartitionMetadata.getDefaultInstance());
+          index, PartitionMetadata.getDefaultInstance());
     }
     /**
      * <pre>
@@ -1196,16 +1196,16 @@ private static final long serialVersionUID = 0L;
      *
      * <code>repeated .PartitionMetadata partitions = 3;</code>
      */
-    public java.util.List<mailgun.kafkapixy.PartitionMetadata.Builder>
+    public java.util.List<PartitionMetadata.Builder>
          getPartitionsBuilderList() {
       return getPartitionsFieldBuilder().getBuilderList();
     }
     private com.google.protobuf.RepeatedFieldBuilderV3<
-        mailgun.kafkapixy.PartitionMetadata, mailgun.kafkapixy.PartitionMetadata.Builder, mailgun.kafkapixy.PartitionMetadataOrBuilder>
+        PartitionMetadata, PartitionMetadata.Builder, PartitionMetadataOrBuilder>
         getPartitionsFieldBuilder() {
       if (partitionsBuilder_ == null) {
         partitionsBuilder_ = new com.google.protobuf.RepeatedFieldBuilderV3<
-            mailgun.kafkapixy.PartitionMetadata, mailgun.kafkapixy.PartitionMetadata.Builder, mailgun.kafkapixy.PartitionMetadataOrBuilder>(
+            PartitionMetadata, PartitionMetadata.Builder, PartitionMetadataOrBuilder>(
                 partitions_,
                 ((bitField0_ & 0x00000002) != 0),
                 getParentForChildren(),
@@ -1231,12 +1231,12 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:GetTopicMetadataRs)
-  private static final mailgun.kafkapixy.GetTopicMetadataRs DEFAULT_INSTANCE;
+  private static final GetTopicMetadataRs DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new mailgun.kafkapixy.GetTopicMetadataRs();
+    DEFAULT_INSTANCE = new GetTopicMetadataRs();
   }
 
-  public static mailgun.kafkapixy.GetTopicMetadataRs getDefaultInstance() {
+  public static GetTopicMetadataRs getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
@@ -1261,7 +1261,7 @@ private static final long serialVersionUID = 0L;
   }
 
   @Override
-  public mailgun.kafkapixy.GetTopicMetadataRs getDefaultInstanceForType() {
+  public GetTopicMetadataRs getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

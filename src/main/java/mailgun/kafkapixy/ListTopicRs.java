@@ -83,7 +83,7 @@ private static final long serialVersionUID = 0L;
   }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return mailgun.kafkapixy.KafkaPixyProto.internal_static_ListTopicRs_descriptor;
+    return KafkaPixyProto.internal_static_ListTopicRs_descriptor;
   }
 
   @SuppressWarnings({"rawtypes"})
@@ -101,9 +101,9 @@ private static final long serialVersionUID = 0L;
   @Override
   protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return mailgun.kafkapixy.KafkaPixyProto.internal_static_ListTopicRs_fieldAccessorTable
+    return KafkaPixyProto.internal_static_ListTopicRs_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            mailgun.kafkapixy.ListTopicRs.class, mailgun.kafkapixy.ListTopicRs.Builder.class);
+            ListTopicRs.class, Builder.class);
   }
 
   public static final int TOPICS_FIELD_NUMBER = 1;
@@ -111,12 +111,12 @@ private static final long serialVersionUID = 0L;
     static final com.google.protobuf.MapEntry<
         String, GetTopicMetadataRs> defaultEntry =
             com.google.protobuf.MapEntry
-            .<String, mailgun.kafkapixy.GetTopicMetadataRs>newDefaultInstance(
-                mailgun.kafkapixy.KafkaPixyProto.internal_static_ListTopicRs_TopicsEntry_descriptor,
+            .<String, GetTopicMetadataRs>newDefaultInstance(
+                KafkaPixyProto.internal_static_ListTopicRs_TopicsEntry_descriptor,
                 com.google.protobuf.WireFormat.FieldType.STRING,
                 "",
                 com.google.protobuf.WireFormat.FieldType.MESSAGE,
-                mailgun.kafkapixy.GetTopicMetadataRs.getDefaultInstance());
+                GetTopicMetadataRs.getDefaultInstance());
   }
   private com.google.protobuf.MapField<
       String, GetTopicMetadataRs> topics_;
@@ -163,9 +163,9 @@ private static final long serialVersionUID = 0L;
    */
   @Override
 
-  public mailgun.kafkapixy.GetTopicMetadataRs getTopicsOrDefault(
+  public GetTopicMetadataRs getTopicsOrDefault(
       String key,
-      mailgun.kafkapixy.GetTopicMetadataRs defaultValue) {
+      GetTopicMetadataRs defaultValue) {
     if (key == null) { throw new NullPointerException(); }
     java.util.Map<String, GetTopicMetadataRs> map =
         internalGetTopics().getMap();
@@ -176,7 +176,7 @@ private static final long serialVersionUID = 0L;
    */
   @Override
 
-  public mailgun.kafkapixy.GetTopicMetadataRs getTopicsOrThrow(
+  public GetTopicMetadataRs getTopicsOrThrow(
       String key) {
     if (key == null) { throw new NullPointerException(); }
     java.util.Map<String, GetTopicMetadataRs> map =
@@ -236,10 +236,10 @@ private static final long serialVersionUID = 0L;
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof mailgun.kafkapixy.ListTopicRs)) {
+    if (!(obj instanceof ListTopicRs)) {
       return super.equals(obj);
     }
-    mailgun.kafkapixy.ListTopicRs other = (mailgun.kafkapixy.ListTopicRs) obj;
+    ListTopicRs other = (ListTopicRs) obj;
 
     if (!internalGetTopics().equals(
         other.internalGetTopics())) return false;
@@ -263,69 +263,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static mailgun.kafkapixy.ListTopicRs parseFrom(
+  public static ListTopicRs parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static mailgun.kafkapixy.ListTopicRs parseFrom(
+  public static ListTopicRs parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static mailgun.kafkapixy.ListTopicRs parseFrom(
+  public static ListTopicRs parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static mailgun.kafkapixy.ListTopicRs parseFrom(
+  public static ListTopicRs parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static mailgun.kafkapixy.ListTopicRs parseFrom(byte[] data)
+  public static ListTopicRs parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static mailgun.kafkapixy.ListTopicRs parseFrom(
+  public static ListTopicRs parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static mailgun.kafkapixy.ListTopicRs parseFrom(java.io.InputStream input)
+  public static ListTopicRs parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static mailgun.kafkapixy.ListTopicRs parseFrom(
+  public static ListTopicRs parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static mailgun.kafkapixy.ListTopicRs parseDelimitedFrom(java.io.InputStream input)
+  public static ListTopicRs parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static mailgun.kafkapixy.ListTopicRs parseDelimitedFrom(
+  public static ListTopicRs parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static mailgun.kafkapixy.ListTopicRs parseFrom(
+  public static ListTopicRs parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static mailgun.kafkapixy.ListTopicRs parseFrom(
+  public static ListTopicRs parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -338,7 +338,7 @@ private static final long serialVersionUID = 0L;
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(mailgun.kafkapixy.ListTopicRs prototype) {
+  public static Builder newBuilder(ListTopicRs prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
   @Override
@@ -359,10 +359,10 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:ListTopicRs)
-      mailgun.kafkapixy.ListTopicRsOrBuilder {
+      ListTopicRsOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return mailgun.kafkapixy.KafkaPixyProto.internal_static_ListTopicRs_descriptor;
+      return KafkaPixyProto.internal_static_ListTopicRs_descriptor;
     }
 
     @SuppressWarnings({"rawtypes"})
@@ -390,9 +390,9 @@ private static final long serialVersionUID = 0L;
     @Override
     protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return mailgun.kafkapixy.KafkaPixyProto.internal_static_ListTopicRs_fieldAccessorTable
+      return KafkaPixyProto.internal_static_ListTopicRs_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              mailgun.kafkapixy.ListTopicRs.class, mailgun.kafkapixy.ListTopicRs.Builder.class);
+              ListTopicRs.class, Builder.class);
     }
 
     // Construct using mailgun.kafkapixy.ListTopicRs.newBuilder()
@@ -420,17 +420,17 @@ private static final long serialVersionUID = 0L;
     @Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return mailgun.kafkapixy.KafkaPixyProto.internal_static_ListTopicRs_descriptor;
+      return KafkaPixyProto.internal_static_ListTopicRs_descriptor;
     }
 
     @Override
-    public mailgun.kafkapixy.ListTopicRs getDefaultInstanceForType() {
-      return mailgun.kafkapixy.ListTopicRs.getDefaultInstance();
+    public ListTopicRs getDefaultInstanceForType() {
+      return ListTopicRs.getDefaultInstance();
     }
 
     @Override
-    public mailgun.kafkapixy.ListTopicRs build() {
-      mailgun.kafkapixy.ListTopicRs result = buildPartial();
+    public ListTopicRs build() {
+      ListTopicRs result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
@@ -438,8 +438,8 @@ private static final long serialVersionUID = 0L;
     }
 
     @Override
-    public mailgun.kafkapixy.ListTopicRs buildPartial() {
-      mailgun.kafkapixy.ListTopicRs result = new mailgun.kafkapixy.ListTopicRs(this);
+    public ListTopicRs buildPartial() {
+      ListTopicRs result = new ListTopicRs(this);
       int from_bitField0_ = bitField0_;
       result.topics_ = internalGetTopics();
       result.topics_.makeImmutable();
@@ -481,16 +481,16 @@ private static final long serialVersionUID = 0L;
     }
     @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof mailgun.kafkapixy.ListTopicRs) {
-        return mergeFrom((mailgun.kafkapixy.ListTopicRs)other);
+      if (other instanceof ListTopicRs) {
+        return mergeFrom((ListTopicRs)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(mailgun.kafkapixy.ListTopicRs other) {
-      if (other == mailgun.kafkapixy.ListTopicRs.getDefaultInstance()) return this;
+    public Builder mergeFrom(ListTopicRs other) {
+      if (other == ListTopicRs.getDefaultInstance()) return this;
       internalGetMutableTopics().mergeFrom(
           other.internalGetTopics());
       this.mergeUnknownFields(other.unknownFields);
@@ -508,11 +508,11 @@ private static final long serialVersionUID = 0L;
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      mailgun.kafkapixy.ListTopicRs parsedMessage = null;
+      ListTopicRs parsedMessage = null;
       try {
         parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        parsedMessage = (mailgun.kafkapixy.ListTopicRs) e.getUnfinishedMessage();
+        parsedMessage = (ListTopicRs) e.getUnfinishedMessage();
         throw e.unwrapIOException();
       } finally {
         if (parsedMessage != null) {
@@ -580,9 +580,9 @@ private static final long serialVersionUID = 0L;
      */
     @Override
 
-    public mailgun.kafkapixy.GetTopicMetadataRs getTopicsOrDefault(
+    public GetTopicMetadataRs getTopicsOrDefault(
         String key,
-        mailgun.kafkapixy.GetTopicMetadataRs defaultValue) {
+        GetTopicMetadataRs defaultValue) {
       if (key == null) { throw new NullPointerException(); }
       java.util.Map<String, GetTopicMetadataRs> map =
           internalGetTopics().getMap();
@@ -593,7 +593,7 @@ private static final long serialVersionUID = 0L;
      */
     @Override
 
-    public mailgun.kafkapixy.GetTopicMetadataRs getTopicsOrThrow(
+    public GetTopicMetadataRs getTopicsOrThrow(
         String key) {
       if (key == null) { throw new NullPointerException(); }
       java.util.Map<String, GetTopicMetadataRs> map =
@@ -633,7 +633,7 @@ private static final long serialVersionUID = 0L;
      */
     public Builder putTopics(
         String key,
-        mailgun.kafkapixy.GetTopicMetadataRs value) {
+        GetTopicMetadataRs value) {
       if (key == null) { throw new NullPointerException(); }
       if (value == null) { throw new NullPointerException(); }
       internalGetMutableTopics().getMutableMap()
@@ -667,12 +667,12 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:ListTopicRs)
-  private static final mailgun.kafkapixy.ListTopicRs DEFAULT_INSTANCE;
+  private static final ListTopicRs DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new mailgun.kafkapixy.ListTopicRs();
+    DEFAULT_INSTANCE = new ListTopicRs();
   }
 
-  public static mailgun.kafkapixy.ListTopicRs getDefaultInstance() {
+  public static ListTopicRs getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
@@ -697,7 +697,7 @@ private static final long serialVersionUID = 0L;
   }
 
   @Override
-  public mailgun.kafkapixy.ListTopicRs getDefaultInstanceForType() {
+  public ListTopicRs getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

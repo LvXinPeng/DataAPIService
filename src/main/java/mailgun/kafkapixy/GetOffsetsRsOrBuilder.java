@@ -10,12 +10,12 @@ public interface GetOffsetsRsOrBuilder extends
   /**
    * <code>repeated .PartitionOffset offsets = 1;</code>
    */
-  java.util.List<mailgun.kafkapixy.PartitionOffset> 
+  java.util.List<PartitionOffset>
       getOffsetsList();
   /**
    * <code>repeated .PartitionOffset offsets = 1;</code>
    */
-  mailgun.kafkapixy.PartitionOffset getOffsets(int index);
+  PartitionOffset getOffsets(int index);
   /**
    * <code>repeated .PartitionOffset offsets = 1;</code>
    */
@@ -23,11 +23,11 @@ public interface GetOffsetsRsOrBuilder extends
   /**
    * <code>repeated .PartitionOffset offsets = 1;</code>
    */
-  java.util.List<? extends mailgun.kafkapixy.PartitionOffsetOrBuilder> 
+  java.util.List<? extends PartitionOffsetOrBuilder>
       getOffsetsOrBuilderList();
   /**
    * <code>repeated .PartitionOffset offsets = 1;</code>
    */
-  mailgun.kafkapixy.PartitionOffsetOrBuilder getOffsetsOrBuilder(
+  PartitionOffsetOrBuilder getOffsetsOrBuilder(
           int index);
 }

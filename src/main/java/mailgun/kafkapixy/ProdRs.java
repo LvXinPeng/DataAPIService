@@ -79,15 +79,15 @@ private static final long serialVersionUID = 0L;
   }
   public static final com.google.protobuf.Descriptors.Descriptor
       getDescriptor() {
-    return mailgun.kafkapixy.KafkaPixyProto.internal_static_ProdRs_descriptor;
+    return KafkaPixyProto.internal_static_ProdRs_descriptor;
   }
 
   @Override
   protected FieldAccessorTable
       internalGetFieldAccessorTable() {
-    return mailgun.kafkapixy.KafkaPixyProto.internal_static_ProdRs_fieldAccessorTable
+    return KafkaPixyProto.internal_static_ProdRs_fieldAccessorTable
         .ensureFieldAccessorsInitialized(
-            mailgun.kafkapixy.ProdRs.class, mailgun.kafkapixy.ProdRs.Builder.class);
+            ProdRs.class, Builder.class);
   }
 
   public static final int PARTITION_FIELD_NUMBER = 1;
@@ -169,10 +169,10 @@ private static final long serialVersionUID = 0L;
     if (obj == this) {
      return true;
     }
-    if (!(obj instanceof mailgun.kafkapixy.ProdRs)) {
+    if (!(obj instanceof ProdRs)) {
       return super.equals(obj);
     }
-    mailgun.kafkapixy.ProdRs other = (mailgun.kafkapixy.ProdRs) obj;
+    ProdRs other = (ProdRs) obj;
 
     if (getPartition()
         != other.getPartition()) return false;
@@ -199,69 +199,69 @@ private static final long serialVersionUID = 0L;
     return hash;
   }
 
-  public static mailgun.kafkapixy.ProdRs parseFrom(
+  public static ProdRs parseFrom(
       java.nio.ByteBuffer data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static mailgun.kafkapixy.ProdRs parseFrom(
+  public static ProdRs parseFrom(
       java.nio.ByteBuffer data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static mailgun.kafkapixy.ProdRs parseFrom(
+  public static ProdRs parseFrom(
       com.google.protobuf.ByteString data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static mailgun.kafkapixy.ProdRs parseFrom(
+  public static ProdRs parseFrom(
       com.google.protobuf.ByteString data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static mailgun.kafkapixy.ProdRs parseFrom(byte[] data)
+  public static ProdRs parseFrom(byte[] data)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data);
   }
-  public static mailgun.kafkapixy.ProdRs parseFrom(
+  public static ProdRs parseFrom(
       byte[] data,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws com.google.protobuf.InvalidProtocolBufferException {
     return PARSER.parseFrom(data, extensionRegistry);
   }
-  public static mailgun.kafkapixy.ProdRs parseFrom(java.io.InputStream input)
+  public static ProdRs parseFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static mailgun.kafkapixy.ProdRs parseFrom(
+  public static ProdRs parseFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input, extensionRegistry);
   }
-  public static mailgun.kafkapixy.ProdRs parseDelimitedFrom(java.io.InputStream input)
+  public static ProdRs parseDelimitedFrom(java.io.InputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input);
   }
-  public static mailgun.kafkapixy.ProdRs parseDelimitedFrom(
+  public static ProdRs parseDelimitedFrom(
       java.io.InputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
   }
-  public static mailgun.kafkapixy.ProdRs parseFrom(
+  public static ProdRs parseFrom(
       com.google.protobuf.CodedInputStream input)
       throws java.io.IOException {
     return com.google.protobuf.GeneratedMessageV3
         .parseWithIOException(PARSER, input);
   }
-  public static mailgun.kafkapixy.ProdRs parseFrom(
+  public static ProdRs parseFrom(
       com.google.protobuf.CodedInputStream input,
       com.google.protobuf.ExtensionRegistryLite extensionRegistry)
       throws java.io.IOException {
@@ -274,7 +274,7 @@ private static final long serialVersionUID = 0L;
   public static Builder newBuilder() {
     return DEFAULT_INSTANCE.toBuilder();
   }
-  public static Builder newBuilder(mailgun.kafkapixy.ProdRs prototype) {
+  public static Builder newBuilder(ProdRs prototype) {
     return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
   }
   @Override
@@ -295,18 +295,18 @@ private static final long serialVersionUID = 0L;
   public static final class Builder extends
       com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
       // @@protoc_insertion_point(builder_implements:ProdRs)
-      mailgun.kafkapixy.ProdRsOrBuilder {
+      ProdRsOrBuilder {
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return mailgun.kafkapixy.KafkaPixyProto.internal_static_ProdRs_descriptor;
+      return KafkaPixyProto.internal_static_ProdRs_descriptor;
     }
 
     @Override
     protected FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return mailgun.kafkapixy.KafkaPixyProto.internal_static_ProdRs_fieldAccessorTable
+      return KafkaPixyProto.internal_static_ProdRs_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              mailgun.kafkapixy.ProdRs.class, mailgun.kafkapixy.ProdRs.Builder.class);
+              ProdRs.class, Builder.class);
     }
 
     // Construct using mailgun.kafkapixy.ProdRs.newBuilder()
@@ -337,17 +337,17 @@ private static final long serialVersionUID = 0L;
     @Override
     public com.google.protobuf.Descriptors.Descriptor
         getDescriptorForType() {
-      return mailgun.kafkapixy.KafkaPixyProto.internal_static_ProdRs_descriptor;
+      return KafkaPixyProto.internal_static_ProdRs_descriptor;
     }
 
     @Override
-    public mailgun.kafkapixy.ProdRs getDefaultInstanceForType() {
-      return mailgun.kafkapixy.ProdRs.getDefaultInstance();
+    public ProdRs getDefaultInstanceForType() {
+      return ProdRs.getDefaultInstance();
     }
 
     @Override
-    public mailgun.kafkapixy.ProdRs build() {
-      mailgun.kafkapixy.ProdRs result = buildPartial();
+    public ProdRs build() {
+      ProdRs result = buildPartial();
       if (!result.isInitialized()) {
         throw newUninitializedMessageException(result);
       }
@@ -355,8 +355,8 @@ private static final long serialVersionUID = 0L;
     }
 
     @Override
-    public mailgun.kafkapixy.ProdRs buildPartial() {
-      mailgun.kafkapixy.ProdRs result = new mailgun.kafkapixy.ProdRs(this);
+    public ProdRs buildPartial() {
+      ProdRs result = new ProdRs(this);
       result.partition_ = partition_;
       result.offset_ = offset_;
       onBuilt();
@@ -397,16 +397,16 @@ private static final long serialVersionUID = 0L;
     }
     @Override
     public Builder mergeFrom(com.google.protobuf.Message other) {
-      if (other instanceof mailgun.kafkapixy.ProdRs) {
-        return mergeFrom((mailgun.kafkapixy.ProdRs)other);
+      if (other instanceof ProdRs) {
+        return mergeFrom((ProdRs)other);
       } else {
         super.mergeFrom(other);
         return this;
       }
     }
 
-    public Builder mergeFrom(mailgun.kafkapixy.ProdRs other) {
-      if (other == mailgun.kafkapixy.ProdRs.getDefaultInstance()) return this;
+    public Builder mergeFrom(ProdRs other) {
+      if (other == ProdRs.getDefaultInstance()) return this;
       if (other.getPartition() != 0) {
         setPartition(other.getPartition());
       }
@@ -428,11 +428,11 @@ private static final long serialVersionUID = 0L;
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
-      mailgun.kafkapixy.ProdRs parsedMessage = null;
+      ProdRs parsedMessage = null;
       try {
         parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
       } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-        parsedMessage = (mailgun.kafkapixy.ProdRs) e.getUnfinishedMessage();
+        parsedMessage = (ProdRs) e.getUnfinishedMessage();
         throw e.unwrapIOException();
       } finally {
         if (parsedMessage != null) {
@@ -550,12 +550,12 @@ private static final long serialVersionUID = 0L;
   }
 
   // @@protoc_insertion_point(class_scope:ProdRs)
-  private static final mailgun.kafkapixy.ProdRs DEFAULT_INSTANCE;
+  private static final ProdRs DEFAULT_INSTANCE;
   static {
-    DEFAULT_INSTANCE = new mailgun.kafkapixy.ProdRs();
+    DEFAULT_INSTANCE = new ProdRs();
   }
 
-  public static mailgun.kafkapixy.ProdRs getDefaultInstance() {
+  public static ProdRs getDefaultInstance() {
     return DEFAULT_INSTANCE;
   }
 
@@ -580,7 +580,7 @@ private static final long serialVersionUID = 0L;
   }
 
   @Override
-  public mailgun.kafkapixy.ProdRs getDefaultInstanceForType() {
+  public ProdRs getDefaultInstanceForType() {
     return DEFAULT_INSTANCE;
   }
 

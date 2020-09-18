@@ -78,7 +78,7 @@ public interface GetTopicMetadataRsOrBuilder extends
    *
    * <code>repeated .PartitionMetadata partitions = 3;</code>
    */
-  java.util.List<mailgun.kafkapixy.PartitionMetadata>
+  java.util.List<PartitionMetadata>
       getPartitionsList();
   /**
    * <pre>
@@ -87,7 +87,7 @@ public interface GetTopicMetadataRsOrBuilder extends
    *
    * <code>repeated .PartitionMetadata partitions = 3;</code>
    */
-  mailgun.kafkapixy.PartitionMetadata getPartitions(int index);
+  PartitionMetadata getPartitions(int index);
   /**
    * <pre>
    * Optional list of metadata for the partitions of this topic
@@ -103,7 +103,7 @@ public interface GetTopicMetadataRsOrBuilder extends
    *
    * <code>repeated .PartitionMetadata partitions = 3;</code>
    */
-  java.util.List<? extends mailgun.kafkapixy.PartitionMetadataOrBuilder>
+  java.util.List<? extends PartitionMetadataOrBuilder>
       getPartitionsOrBuilderList();
   /**
    * <pre>
@@ -112,6 +112,6 @@ public interface GetTopicMetadataRsOrBuilder extends
    *
    * <code>repeated .PartitionMetadata partitions = 3;</code>
    */
-  mailgun.kafkapixy.PartitionMetadataOrBuilder getPartitionsOrBuilder(
+  PartitionMetadataOrBuilder getPartitionsOrBuilder(
           int index);
 }
