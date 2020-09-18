@@ -2,9 +2,9 @@ package com.csvw.oneService;
 
 //import org.junit.jupiter.api.Test;
 import org.junit.Test;
-import org.springframework.boot.test.context.SpringBootTest;
+//import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest
+//@SpringBootTest
 class OneServiceApplicationTests {
 
 	@Test
