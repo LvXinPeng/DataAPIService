@@ -37,7 +37,7 @@ public class DataServiceImpl implements DataService {
                 String value = resultSet.getString(columnName);
                 jsonObj.put(columnName, value);
             }
-            client.produceMsg(kafkaCluster, "kafka-pixy", jsonObj.toString(), true);
+            client.produceMsg(kafkaCluster, topicName, jsonObj.toString(), true);
         }
 
         resultSet.close();
